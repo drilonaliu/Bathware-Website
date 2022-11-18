@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:white;
+}
+
+
+footer{
+    margin: auto;
+    padding: 4.5em 15em;
+    border: 2px solid red;
+    background-color: #3b3b3b ;
+    font-family: 'Roboto';
+    letter-spacing: 1.2px;
+    font-size: smaller;
+}
+
+
+.company-info{
+    border: 3px solid orange;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.cols {
+    min-width: 600px;
+    border: 3px solid orange;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-col{
+    border: 3px solid green;
+}
+
+
+footer ul {
+    text-decoration: none;
+    margin-top: 1.2em;
+    list-style: none;
+}
+
+footer li{
+    margin-top: .7em;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer p{
+    margin-top: .7em;
+}
+
+.social-network{
+    margin: 0.8em 0;
+}
+.copyrights{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid palegreen;
+}
