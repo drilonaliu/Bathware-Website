@@ -1,4 +1,4 @@
-*{
+footer *{
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -59,8 +59,24 @@ footer p{
 .social-network{
     margin: 0.8em 0;
 }
+
 .copyrights{
     display: flex;
     justify-content: space-between;
     border: 2px solid palegreen;
+}
+
+
+footer li{
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+}
+
+/*centering icon with text , text in center with icon*/
+footer img{
+    position: relative;
+    /* Adjust these values accordingly */
+    top: 2.4px;
+    left: 1px;
 }
