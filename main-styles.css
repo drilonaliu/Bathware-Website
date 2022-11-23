@@ -1,6 +1,16 @@
+main * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:white;
+    font-family: 'Roboto';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*temporary change since I'm working on firefox */
+}
+
 .products h2,h3,p{
     color:#3b3b3b;
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; temporary change since I'm working on firefox */
 }
 
 a{
@@ -22,8 +32,9 @@ a{
 
 .product {
     display: block;
-    width: 24%;
+    width: 253px;
     padding: 0 1%;
+    float: left;
 }
 
 .featured-products {
@@ -56,6 +67,10 @@ span {
     padding-top: 0.8em;
 }
 
+.product-description a{
+    color:#3b3b3b;
+}
+
 .price {
     font-size: smaller;
     padding-top: 0.5em;
@@ -63,9 +78,25 @@ span {
 
 }
 
+.load-more button{
+    color:white;
+    background-color: #3b3b3b;
+    border:none;
+    padding:1em 2em;
+}
+
+.load-more {
+    max-width: 61%;
+    margin: 2em auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .image-wrapper {
     background: #f2f2f2;
-    height: 305px;
+    height: 335px;
     width: 100%;
     /* float: left; */
     position: relative;
@@ -91,11 +122,26 @@ span {
     opacity: 1;
 }
 
+.product:hover .product-description a{
+    color:orange;
+    transition: color 0.15s;
+}
+
+
+
 .image-overlay h3 {
     padding: 0.5em 0.5em;
     border: 1px solid white;
     margin: 1em;
     font-size: 1em;
+}
+
+.image-overlay button{
+    padding: 0.5em 0.5em;
+    border: 1px solid white;
+    margin: 1em;
+    font-size: 1em;
+    background-color: rgba(0,0,0,0);
 }
 
 .product-image {
