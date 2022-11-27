@@ -1,8 +1,11 @@
-/*CARDS */
+
 body {
     margin: 0;
     padding: 0;  
 }
+
+
+/*CARDS */
 .cardsec * { 
     margin: 0;
     padding: 0;
@@ -301,7 +304,6 @@ input[type=submit] {
  }
 
 
- /*not final solution*/
  hr {
      position: absolute;
      left: 0;
