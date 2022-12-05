@@ -1,4 +1,4 @@
-*{
+header *{
     color:#3b3b3b;
     font-family: 'Roboto';
     box-sizing: border-box;
@@ -190,7 +190,7 @@ a{
 .image-slider-text h4{
     font-weight: 600;
     font-size: 20px;
-    margin-bottom: -18px;
+    /* margin-bottom: -18px; */
 }
 
 #button{

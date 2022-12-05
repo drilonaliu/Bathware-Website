@@ -1,7 +1,7 @@
-:root{
-    --color-primary:#ffae00;
-    --color-text:#303030;
-    --color-card-background:#f5f6f8;
+:root {
+    --color-primary: #ffae00;
+    --color-text: #303030;
+    --color-card-background: #f5f6f8;
 }
 
 .products h2,
@@ -80,6 +80,10 @@ p {
     color: grey;
     text-decoration: line-through;
 }
+
+/* .image-overlay a {
+    color: white;
+} */
 
 .product-description {
     padding-top: 0.8em;

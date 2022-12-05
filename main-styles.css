@@ -8,9 +8,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    /* color: white; */
     font-family: 'Roboto';
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     /*temporary change since I'm working on firefox */
 }
 
@@ -27,4 +27,8 @@ button {
     background-color: var(--color-text);
     border: none;
     padding: 1em 2em;
+}
+
+.products a{
+    color:white;
 }
