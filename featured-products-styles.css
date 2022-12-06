@@ -5,8 +5,8 @@
 }
 
 .products h2,
-h3,
-p {
+.products h3,
+.products p {
     color: var(--color-text);
     /* font-family: 'Roboto'; */
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; temporary change since I'm working on firefox */
