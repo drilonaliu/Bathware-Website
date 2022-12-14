@@ -1,7 +1,7 @@
 function outputItem(product) {
     document.write('<div class="product">');
     document.write('<div class="image-wrapper">');
-    document.write('<img class="product-image" src="images/' + product.filename + '" alt="' + product.name + '">');
+    document.write('<img class="product-image" src="images/' + product.product.filename + '" alt="' + product.product.name + '">');
     document.write('<div class="image-overlay">');
     document.write('<button><a href="#">ADD TO CART <img src="images/cart-icon.png" alt="cart-icon"></a></button>');
     document.write('<nav>');
@@ -13,7 +13,7 @@ function outputItem(product) {
     document.write('</nav>');
     document.write('</div>');
     document.write('</div>');
-    document.write('<p class="product-description"><a href="#">'+product.name+'</a></p>');
-    document.write('<p class="price">&dollar;'+product.price+'</p>');
+    document.write('<p class="product-description"><a href="#">' + product.product.name + '</a></p>');
+    document.write('<p class="price">&dollar;' + product.product.price + '</p>');
     document.write('</div>');
 }
