@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cart.css" rel="stylesheet">
+    <title>Document</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <div class="cart">
+
+        <h2> Shopping Cart. </h2>
+
+        <div class="cart-header">
+            <span> Product </span>
+            <div class="cart-specify">
+                <span> Size </span>
+                <span> Quantity</span>
+                <span> Total Price </span>
+            </div>
+        </div>
+
+        <div class="cart-products">
+            <div class="cart-product-row">
+
+                <div class="cart-product">
+                    <img src="images/product01.png">
+                    <div class="cart-product-name">
+                        <p class="product-name"> SINK</p>
+                        <p class="product-company"> BATA </p>
+                    </div>
+                </div>
+
+                <select class="size" name="size">
+                    <option> 1 </option>
+                    <option> 2 </option>
+                    <option> 3 </option>
+                </select>
+
+
+                <form id='myform' method='POST' class='quantity' action='#'>
+                    <input type='button' value='-' class='qtyminus minus' field='quantity' />
+                    <input type='text' name='quantity' value='0' class='qty' />
+                    <input type='button' value='+' class='qtyplus plus' field='quantity' />
+                </form>
+
+                <p>
+                    $110.99
+                </p>
+
+                <button class="remove-product">  X </button>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

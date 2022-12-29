@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+
+.cart{
+    width: 900px;
+}
+
+.cart-header {
+    margin-top: 3em;
+    margin-left:1em;
+    font-weight: bold;
+    font-size: .9em;
+}
+.cart-specify{
+    display: inline;
+    margin-left:200px;
+}
+
+.cart-specify span {
+    margin-left:120px;
+}
+
+.cart-products {
+    margin-top:.5em;
+    border-top: 2px solid gainsboro;
+    height: 500px;
+    border-bottom: 2px solid gainsboro;
+}
