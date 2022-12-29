@@ -8,11 +8,14 @@
 
 /*-----Payment Info. card-----*/
 .payment-info-card {
-    width: 260px;
+    width: 300px;
     border: 7px solid rgb(250, 250, 250);
     background-color: rgb(250, 250, 250);
-    padding: 1em .7em;
+    padding: 1em 1.5em;
     border-radius: 1em;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 1em;
 }
 
 .payment-info-card h3 {
@@ -20,18 +23,18 @@
 }
 
 .payment-info-card form>div {
-    margin-top: 1.6em;
+    margin-top: 3em;
 }
 
 .payment-info-card p {
-    font-size: .6em;
+    font-size: .65em;
     color: rgb(156, 155, 158);
-    font-weight: bold;
     letter-spacing: 0.7px;
+    font-weight: 600;
 }
 
 .payment-method>div {
-    margin-top: .5em;
+    margin-top: .9em;
 }
 
 /*----payment method select---*/
@@ -41,9 +44,10 @@
 }
 
 .payment-info-card img {
-    width: 12px;
-    height: 8px;
+    width: 20px;
+    height: 13px;
     margin-right: .5em;
+    margin-top:3px;
 }
 
 .radio span {
@@ -57,7 +61,7 @@
 }
 
 .radio {
-    font-size: 0.6em;
+    font-size: 0.75em;
     letter-spacing: 0.5px;
     color: black;
     display: flex;
@@ -102,7 +106,7 @@
 
 .card-name input[type=text] {
     color: rgb(46, 46, 46);
-    font-size: .7em;
+    font-size: 1em;
     font-weight: bold;
     margin-top: .5em;
 }
@@ -122,7 +126,7 @@
 .payment-info-card select {
     border: none;
     background-color: rgb(250, 250, 250);
-    font-size: 0.6em;
+    font-size: 0.8em;
 }
 
 .exp-date div:nth-child(1) {
@@ -169,5 +173,5 @@ input[type=password] {
     width: 40px;
     text-align: right;
     margin: 0;
-    font-size: 0.6em;
+    font-size: 0.8em;
 }
