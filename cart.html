@@ -26,34 +26,39 @@
         </div>
 
         <div class="cart-products">
+
             <div class="cart-product-row">
 
                 <div class="cart-product">
-                    <img src="images/product01.png">
+                    <div class="product-image">
+                        <img src="images/product01.png">
+                    </div>
                     <div class="cart-product-name">
-                        <p class="product-name"> SINK</p>
+                        <p class="product-name"> Sandqvist</p>
                         <p class="product-company"> BATA </p>
                     </div>
                 </div>
 
-                <select class="size" name="size">
-                    <option> 1 </option>
-                    <option> 2 </option>
-                    <option> 3 </option>
-                </select>
+                <div class="product-size">
+                    <select class="size" name="size">
+                        <option> 1 </option>
+                        <option> 2 </option>
+                        <option> 3 </option>
+                    </select>
+                </div>
+
+                <div class="product-quantity">
+                    <form id='myform' method='POST' class='quantity' action='#'>
+                        <input type='button' value='-' class='qtyminus minus' field='quantity' />
+                        <input type='text' name='quantity' value='0' class='qty' />
+                        <input type='button' value='+' class='qtyplus plus' field='quantity' />
+                    </form>
+                </div>
 
 
-                <form id='myform' method='POST' class='quantity' action='#'>
-                    <input type='button' value='-' class='qtyminus minus' field='quantity' />
-                    <input type='text' name='quantity' value='0' class='qty' />
-                    <input type='button' value='+' class='qtyplus plus' field='quantity' />
-                </form>
+                <p class="product-price"> $110.99 </p>
 
-                <p>
-                    $110.99
-                </p>
-
-                <button class="remove-product">  X </button>
+                <button class="remove-product"> X </button>
 
             </div>
         </div>
