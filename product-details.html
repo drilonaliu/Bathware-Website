@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Window Location:", window.location);
+        const myKeysValues = window.location.search;
+        console.log("Keys & Values:", myKeysValues);
+
+        const urlParams = new URLSearchParams(myKeysValues);
+        const param1=urlParams.get('id');
+
+        console.log("ID: ",param1);
+        document.write('ID:' + param1);
+    </script>
+</body>
+</html>
