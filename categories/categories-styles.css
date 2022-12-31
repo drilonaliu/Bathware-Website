@@ -1,9 +1,3 @@
-:root {
-    --color-primary: #ffae00;
-    --color-text: #303030;
-    --color-card-background: #f5f6f8;
-}
-
 header{
     min-height: 100px;
     background-color: #F5F5EF;
@@ -35,7 +29,7 @@ header{
     background: #595959;
 }
 
-.intro {
+.title {
     position: relative;
     margin: 0 auto;
     padding: 40px 0;
@@ -54,12 +48,16 @@ header{
     display: block;
     width: 253px;
     padding: 100px 1%;
-    float: left;
+    transition: padding 0.15s ease-in;
 }
 
-.categories {
+.category:hover {
+    padding: 80px 1%;
+}
+
+.product-categories {
     max-width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -72,13 +70,22 @@ header{
 
 .category-image {
     background: var(--color-card-background);
-    height: 353px;
-    width: 353px;
+    height: 253px;
+    width: 100%;
     /* float: left; */
     position: relative;
 }
 
-figure img {
+.category h4 {
+    color:var(--color-text);
+    transition: color 0.15s ease-in-out;
+}
+
+.category:hover h4 {
+    color:var(--color-primary);
+}
+
+.product-categories img {
     width: auto;
     height: auto;
     max-width: 100%;
@@ -88,4 +95,59 @@ figure img {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20%;
+}
+
+.product-marketing {
+    padding-top: 4em;
+}
+
+.spacer {
+    min-height: 6em;
+}
+
+.marketing {
+    min-height: 500px;
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.marketing-picture {
+    min-width:50%;
+    max-width: 50%;
+    position: relative;
+}
+
+.marketing-picture img {
+    max-width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(1.5,1.5) translate(-33.3%,-33.3%);
+}
+
+.marketing-description {
+    padding: 6em;
+    min-width: 50%;
+}
+
+.marketing-description h3{
+    font-size: xx-large;
+    padding-bottom: 1em;
+}
+
+.marketing-description p{
+    font-size: larger;
+}
+
+.title h4 {
+    width: fit-content;
+    color: #303030;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -0.9px;
 }

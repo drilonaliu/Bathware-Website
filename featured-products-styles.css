@@ -12,33 +12,17 @@
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; temporary change since I'm working on firefox */
 }
 
-.featured-products h2::before {
-    content: " ";
-    display: block;
-    height: 2px;
-    width: 50px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    background: #595959;
-}
-
-.featured-products h2::after {
-    content: " ";
-    display: block;
-    height: 2px;
-    width: 50px;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    background: #595959;
-}
-
 .featured-products h2 {
-    position: relative;
-    margin: 0 auto;
-    max-width: 360px;
+    width: fit-content;
+    color: #303030;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -0.9px;
 }
+
+
 
 .product-navbar {
     list-style: none;
@@ -58,13 +42,6 @@
     width: 253px;
     padding: 0 1%;
     float: left;
-}
-
-.featured-products {
-    max-width: 61%;
-    margin: 0 auto;
-    padding: 2em;
-    text-align: center;
 }
 
 .product-cards a{
@@ -144,7 +121,7 @@
 
 .product:hover .product-description a {
     color: var(--color-primary);
-    transition: color 0.15s;
+    transition: color 0.15s ease-in-out;
 }
 
 .image-overlay h3 {

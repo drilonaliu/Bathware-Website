@@ -22,7 +22,7 @@
     letter-spacing: -0.9px;
 }
 
-.blog-sec .title {
+.title {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -32,7 +32,7 @@
     color: #ffae00;
 }
 
-.blog-sec .tline {
+.tline {
     background-color: #303030;
     border-bottom: 3px solid #303030;
     opacity: 0.8;
