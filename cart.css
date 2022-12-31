@@ -5,30 +5,95 @@
     font-family: 'Roboto';
 }
 
+body{
+    background-color:#F5F5EF;
+    background-color: white;
+}
+
+/*---Doni Navbar---*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color:#F5F5EF;
+    padding:10px 3% 0px 3%;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 10px;
+  }
+  
+.navbar li {
+  display: inline-block;
+  }
+  
+.navbar-links li a {
+    color: #3b3b3b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 650;
+  }
+  
+.navbar-links li a:hover {
+    color: orange;
+  }
+
+.navbar-links li a:active{
+    color: orange;
+}
+.nav-image{
+    margin-right: 10px;
+}
+
+
+.brand{
+    font-size: 2em;
+    font-weight: 800;
+    padding-left: 15px;
+    letter-spacing: 1.8px;
+    line-height: 2em;
+}
+.brand span{
+    color: orange;
+}
+.brand img{
+    width: 42px;
+    height: 42px;
+}
+.navbar-icons li img{
+    padding: 7px 8px;
+}
+
+
+
+
+/*--- Shopping cart ---- */
 
 .shopping-cart{
     border: 1px solid green;
     width: fit-content;
     padding: 1em 1em;
-    margin: auto
+    margin: 5em auto;
 }
 
 .cart {
-    width: 800px;
+    width: 840px;
     display: inline-block;
     border: 6px solid yellow;
 }
 
 .cart-header {
-    margin-top: 3em;
     margin-left: 1em;
-    font-weight: bold;
-    font-size: .9em;
+    font-weight: 600;
+    font-size: .8em;
 }
 
 .cart-specify {
     display: inline;
-    margin-left: 130px;
+    margin-left: 150px;
 }
 
 .cart-specify span {
@@ -36,15 +101,20 @@
 }
 
 .cart-products {
-    margin-top: .5em;
-    border-top: 2px solid gainsboro;
-    height: 500px;
-    border-bottom: 2px solid gainsboro;
-    padding: 0 .4em;
+    margin-top: .6em;
+    border-top: 2px solid rgb(245, 243, 243);
+    height: fit-content;
+    border-bottom: 2px solid rgb(245, 243, 243);
+    padding: 0 .4em;    
 }
 
+.cart-table{
+    border: green 2px solid;
+    margin-top: 3em;
+    padding: 0 1em;
+}
 .cart-product-row{
-    width:1000px;
+    /* width:1000px; */
     margin: .7em 0;
     /* border: 10px solid orange;; */
 }
@@ -142,3 +212,4 @@
     font-weight: lighter;
     font-size: 1.1em;
 }
+
