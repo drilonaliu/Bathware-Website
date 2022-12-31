@@ -103,9 +103,8 @@ body{
 .cart-products {
     margin-top: .6em;
     border-top: 2px solid rgb(245, 243, 243);
-    height: fit-content;
     border-bottom: 2px solid rgb(245, 243, 243);
-    padding: 0 .4em;    
+    /* padding: 0 .4em;     */
 }
 
 .cart-table{
@@ -115,6 +114,7 @@ body{
 }
 .cart-product-row{
     /* width:1000px; */
+
     margin: .7em 0;
     height: 100px;
     /* border: 10px solid orange;; */
@@ -156,16 +156,17 @@ body{
 
 .product-size{
     display: inline-block;
-    margin-left:170px;  
+    margin-left:180px;  
 }
 
 .product-size select{
     padding: .5em .3em;
-    width: 50px;
+    width: 70px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     background-color: rgb(250, 250, 250);
     font-size: .9em;
+    text-align: center;
     /* margin-left:; */
 }
 
