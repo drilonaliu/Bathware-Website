@@ -5,8 +5,8 @@
     font-family: 'Roboto';
 }
 
-body{
-    background-color:#F5F5EF;
+body {
+    background-color: #F5F5EF;
     background-color: white;
 }
 
@@ -16,18 +16,19 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color:#F5F5EF;
-    padding:10px 3% 0px 3%;
+    background-color: #F5F5EF;
+    padding: 10px 3% 0px 3%;
 }
+
 .navbar ul {
     list-style-type: none;
     margin: 10px;
-  }
-  
+}
+
 .navbar li {
-  display: inline-block;
-  }
-  
+    display: inline-block;
+}
+
 .navbar-links li a {
     color: #3b3b3b;
     text-align: center;
@@ -35,35 +36,39 @@ body{
     text-decoration: none;
     font-size: 1em;
     font-weight: 650;
-  }
-  
+}
+
 .navbar-links li a:hover {
     color: orange;
-  }
+}
 
-.navbar-links li a:active{
+.navbar-links li a:active {
     color: orange;
 }
-.nav-image{
+
+.nav-image {
     margin-right: 10px;
 }
 
 
-.brand{
+.brand {
     font-size: 2em;
     font-weight: 800;
     padding-left: 15px;
     letter-spacing: 1.8px;
     line-height: 2em;
 }
-.brand span{
+
+.brand span {
     color: orange;
 }
-.brand img{
+
+.brand img {
     width: 42px;
     height: 42px;
 }
-.navbar-icons li img{
+
+.navbar-icons li img {
     padding: 7px 8px;
 }
 
@@ -72,7 +77,7 @@ body{
 
 /*--- Shopping cart ---- */
 
-.shopping-cart{
+.shopping-cart {
     /* border: 1px solid purple;; */
     width: fit-content;
     padding: 1em 1em;
@@ -107,18 +112,21 @@ body{
     /* padding: 0 .4em;     */
 }
 
-.cart-table{
+.cart-table {
     /* border: green 2px solid; */
     margin-top: 3em;
     padding: 0 1em;
 }
-.cart-product-row{
+
+.cart-product-row {
     /* width:1000px; */
 
     margin: .7em 0;
     height: 100px;
-    /* border: 10px solid orange;; */
+    /* border: 10px solid orange;;
+} */
 }
+
 .cart-product {
     /* width: 400px; */
     /* height: 150px; */
@@ -140,7 +148,7 @@ body{
 .cart-product-name {
     display: inline-block;
     vertical-align: middle;
-    margin-left:.4em;
+    margin-left: .4em;
 }
 
 .product-name {
@@ -154,12 +162,12 @@ body{
     margin-top: .3em;
 }
 
-.product-size{
+.product-size {
     display: inline-block;
-    margin-left:180px;  
+    margin-left: 180px;
 }
 
-.product-size select{
+.product-size select {
     padding: .5em .3em;
     width: 70px;
     border: none;
@@ -170,17 +178,17 @@ body{
     /* margin-left:; */
 }
 
-.product-quantity{
+.product-quantity {
     display: inline-block;
     margin-right: 10px;
 }
 
 
-.product-quantity{
-    margin-left:6.3em;
+.product-quantity {
+    margin-left: 6.3em;
 }
 
-.product-quantity input[type=button]{
+.product-quantity input[type=button] {
     background-color: transparent;
     border: none;
     font-size: 1.1em;
@@ -188,7 +196,7 @@ body{
     width: fit-content;
 }
 
-.product-quantity input[type=text]{
+.product-quantity input[type=text] {
     background-color: transparent;
     /* border: 1px solid blue; */
     border: none;
@@ -200,14 +208,14 @@ body{
 }
 
 
-.product-price{
+.product-price {
     display: inline-block;
     margin-left: 6.1em;
-    font-weight: lighter    ;
+    font-weight: lighter;
 }
 
 
-.remove-product{
+.remove-product {
     margin-left: 40px;
     border: none;
     background-color: transparent;
@@ -215,51 +223,78 @@ body{
     font-size: 1.1em;
 }
 
+section {
+    display: flex;
+}
 
-.cost{
+.cost {
     /* border: 1px solid purple; */
     width: fit-content;
     margin-left: auto;
-    margin-top: 20px;  
+    margin-top: 20px;
+
 }
 
-.subtotal{
+.subtotal {
     /* border: 1px solid orange; */
 
 }
 
 
-.shipping{
-    margin-top: 20px;  
+.shipping {
+    margin-top: 20px;
     /* border: 1px solid blue;  */
 }
 
 
 .subtotal,
 .shipping,
-.total{
- text-align: center;
- width: fit-content;
- margin-left: 20px
+.total {
+    text-align: center;
+    width: fit-content;
+    margin-left: 20px
 }
 
-.price-info{
+.price-info {
     margin-left: 65px;
     font-weight: 600;
 }
 
-.total-text{
+.total-text {
     font-size: 19px;
     font-weight: 900;
 }
 
-.total-price{
+.total-price {
     font-size: 20px;
     font-weight: 900;
     margin-left: 79px;
 }
-.underline{
-    border:0.5px solid rgb(231, 229, 229);
+
+.underline {
+    border: 0.5px solid rgb(231, 229, 229);
     width: 240px;
     margin: 16px 0;
+}
+
+
+.go-back {
+    width: fit-content;
+    height: fit-content;
+    margin-top: auto;
+    display: inline-block;
+}
+
+.go-back span {
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 900;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.go-back img {
+    display: inline-block;
+    border: 1px solid #fff;
+    vertical-align: middle;
 }
