@@ -73,12 +73,29 @@ body {
 }
 
 
+/*-------------------- Shopping Cart  Section -------------- */
 
+.pageTitle {
+    margin-top: 1em;
+}
 
-/*--- Shopping cart ---- */
+.pageTitle h4 {
+    margin-left: 10px;
+    width: fit-content;
+    color: #303030;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.9px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pageTitle h4 span {
+    color: #ffae00;
+}
 
 .shopping-cart {
-    /* border: 1px solid purple;; */
     width: fit-content;
     padding: 1em 1em;
     margin: 3em auto;
@@ -87,49 +104,48 @@ body {
 .cart {
     width: 840px;
     display: inline-block;
-    /* border: 6px solid yellow; */
-}
-
-.cart-header {
-    margin-left: 1em;
-    font-weight: 600;
-    font-size: .8em;
 }
 
 .cart-specify {
     display: inline;
     margin-left: 150px;
+
 }
 
 .cart-specify span {
     margin-left: 120px;
 }
 
-.cart-products {
-    margin-top: .6em;
-    border-top: 2px solid rgb(245, 243, 243);
-    border-bottom: 2px solid rgb(245, 243, 243);
-    /* padding: 0 .4em;     */
-}
+
+/* Cart Table*/
 
 .cart-table {
-    /* border: green 2px solid; */
     margin-top: 3em;
     padding: 0 1em;
 }
 
-.cart-product-row {
-    /* width:1000px; */
+.cart-header {
+    margin-left: 1em;
+    font-weight: 600;
+    font-size: .8em;
+    letter-spacing: 1px;
+}
 
+
+.cart-products {
+    margin-top: .6em;
+    border-top: 2px solid rgb(245, 243, 243);
+    border-bottom: 2px solid rgb(245, 243, 243);
+}
+
+/*--cart row--*/
+
+.cart-product-row {
     margin: .7em 0;
     height: 100px;
-    /* border: 10px solid orange;;
-} */
 }
 
 .cart-product {
-    /* width: 400px; */
-    /* height: 150px; */
     width: fit-content;
     display: inline-block;
 }
@@ -162,31 +178,36 @@ body {
     margin-top: .3em;
 }
 
+/*size*/
 .product-size {
     display: inline-block;
-    margin-left: 180px;
+    margin-left: 195px;
 }
 
 .product-size select {
-    padding: .5em .3em;
+    padding: .7em .6em;
     width: 70px;
     border: none;
     border-radius: 5px;
     background-color: rgb(250, 250, 250);
     font-size: .9em;
     text-align: center;
-    /* margin-left:; */
 }
 
+/*quantity*/
 .product-quantity {
     display: inline-block;
-    margin-right: 10px;
 }
-
 
 .product-quantity {
-    margin-left: 6.3em;
+    margin-left: 5.5em;
 }
+
+/* - and + button*/
+.product-quantity img {
+    vertical-align: middle;
+}
+
 
 .product-quantity input[type=button] {
     background-color: transparent;
@@ -198,7 +219,6 @@ body {
 
 .product-quantity input[type=text] {
     background-color: transparent;
-    /* border: 1px solid blue; */
     border: none;
     width: 40px;
     text-align: center;
@@ -207,7 +227,7 @@ body {
     margin: 0;
 }
 
-
+/*total price*/
 .product-price {
     display: inline-block;
     margin-left: 6.1em;
@@ -215,6 +235,7 @@ body {
 }
 
 
+/*x button*/
 .remove-product {
     margin-left: 40px;
     border: none;
@@ -223,29 +244,44 @@ body {
     font-size: 1.1em;
 }
 
+/*---continue shopping and total section----*/
 section {
     display: flex;
 }
 
+/*--continue shopping--*/
+.go-back {
+    width: fit-content;
+    height: fit-content;
+    margin-top: auto;
+    display: inline-block;
+}
+
+.go-back span {
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 900;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.go-back img {
+    display: inline-block;
+    border: 1px solid #fff;
+    vertical-align: middle;
+}
+
+
+/*--subtotal, shipping, total--*/
 .cost {
-    /* border: 1px solid purple; */
     width: fit-content;
     margin-left: auto;
     margin-top: 20px;
-
 }
-
-.subtotal {
-    /* border: 1px solid orange; */
-
-}
-
 
 .shipping {
     margin-top: 20px;
-    /* border: 1px solid blue;  */
 }
-
 
 .subtotal,
 .shipping,
@@ -277,24 +313,190 @@ section {
     margin: 16px 0;
 }
 
+/*----------------------- Payment Info Card --------------------------------------------*/
 
-.go-back {
-    width: fit-content;
-    height: fit-content;
-    margin-top: auto;
+.payment-info-card {
+    width: 360px;
+    border: 7px solid rgb(250, 250, 250);
+    background-color: #FAFAFA;
+    padding: 1.2em 1.5em;
+    border-radius: 1em;
     display: inline-block;
+    vertical-align: top;
+    margin-left: 3em;
 }
 
-.go-back span {
-    display: inline-block;
-    font-size: 19px;
-    font-weight: 900;
+.payment-info-card h3 {
+    color: rgb(31, 31, 31);
+}
+
+.payment-info-card form>div {
+    margin-top: 3em;
+}
+
+
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+/*text: payment method, name on card, card number, experation date*/
+.p-label {
+    font-size: 13.5px;
+    color: rgb(162, 162, 165);
+    letter-spacing: 0.7px;
+    font-weight: 550;
+}
+
+.payment-method>div {
+    margin-top: .9em;
+}
+
+/* select payment method */
+.radio .option-text {
+    margin-left: 1em;
+}
+
+.payment-info-card img {
+    width: 20px;
+    height: 13px;
+    margin-right: .5em;
+    margin-top: 3px;
+}
+
+.radio {
+    font-size: 0.75em;
+    letter-spacing: 0.5px;
+    margin-top: 1.5em;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.radio span {
+    color: rgb(46, 46, 46);
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+}
+
+.radio input[type=radio] {
+    display: none;
+}
+
+.label2 {
+    margin-top: 2em;
+}
+
+/*animation on clicking circle*/
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(156, 155, 158);
+    border-radius: 50%;
+    display: flex;
+    transition: border-color .5s ease;
+}
+
+.circle::before {
+    content: '';
+    margin: auto;
+    width: 12px;
+    height: 12px;
+    background-color: #ff9800;
+    border-radius: 55%;
+    box-sizing: border-box;
+    transition: transform .5s ease;
+    transform: scale(0);
+}
+
+.radio input:checked+.circle {
+    border-color: #ff9800;
+}
+
+.radio input:checked+.circle::before {
+    transform: scale(1);
+}
+
+/* name on card */
+.card-name input[type=text] {
+    color: rgb(46, 46, 46);
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+/*-- card number--*/
+.card-number input[type=password],
+.card-number input[type=number] {
+    font-size: 30px;
+    width: 50px;
+    height: 20px;
+    display: inline;
+    margin-top: .4em;
+    text-align: center;
+    border-bottom: 2px solid orange;
+}
+
+
+.notfirst input[type=password],
+.notfirst input[type=number] {
     margin-left: 10px;
-    vertical-align: middle;
 }
 
-.go-back img {
-    display: inline-block;
-    border: 1px solid #fff;
-    vertical-align: middle;
+.payment-info-card select {
+    border: none;
+    background-color: rgb(250, 250, 250);
+    font-size: 1em;
+}
+
+
+/*-experation date-*/
+.exp-date div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-dates {
+    margin-top: .9em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp-date input[type=number] {
+    width: 40px;
+    text-align: right;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+/*-check out button-*/
+.payment-info-card button {
+    margin-top: 4em;
+    width: 100%;
+    height: 3.5em;
+    border: none;
+    background-color: #ffae00;
+    border-radius: 0.5em;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: 0.7px;
+}
+
+
+/*--Input Types -- */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number],
+input[type=text],
+input[type=password] {
+    border: none;
+    background-color: rgb(250, 250, 250);
 }
