@@ -3,32 +3,6 @@ header{
     background-color: #F5F5EF;
 }
 
-.intro h2 {
-    color: var(--color-text);
-}
-
-.intro h2::before {
-    content: " ";
-    display: block;
-    height: 2px;
-    width: 50px;
-    position: absolute;
-    top: 50%;
-    left: -25%;
-    background: #595959;
-}
-
-.intro h2::after {
-    content: " ";
-    display: block;
-    height: 2px;
-    width: 50px;
-    position: absolute;
-    top: 50%;
-    right: -25%;
-    background: #595959;
-}
-
 .title {
     position: relative;
     margin: 0 auto;
@@ -65,7 +39,7 @@ header{
 }
 
 .category-title {
-    padding-top: 0.8em;
+    padding-top: 1em;
 }
 
 .category-image {
@@ -140,6 +114,7 @@ header{
 
 .marketing-description p{
     font-size: larger;
+    padding-bottom: 3em;
 }
 
 .title h4 {
@@ -150,4 +125,9 @@ header{
     text-align: center;
     text-transform: uppercase;
     letter-spacing: -0.9px;
+}
+
+.title {
+    padding-top: 5em;
+    padding-bottom: 0;
 }
