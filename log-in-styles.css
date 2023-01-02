@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+/*--title--*/
+
+
+body{
+    padding: 1em;
+}
+.for-title {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5em;
+}
+
+.title h4 {
+    display: inline;
+    vertical-align: middle;
+    margin: 0 .8em;
+    color: #303030;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.9px;
+}
+
+.title h4 span {
+    color: #ffae00;
+}
+
+.tline {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #303030;
+    border-bottom: 3px solid #303030;
+    opacity: 0.8;
+    width: 60px;
+}
+
+.close {
+    border: 1px solid green;
+}
+
+
+/*log in form*/
+.log-in-card {
+    width: 60%;
+    margin: 5em auto;
+}
+
+.sign-in {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.sign-in span {
+    display: inline-block;
+    color: #303030;
+    color: rgb(144, 144, 151);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -0.9px;
+    transition: all .5s;
+}
+
+
+.sign-in span+span {
+    margin-left: 50px;
+}
+
+
+.sign-in span::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #ffae00;
+    transition: width .5s;
+}
+
+.sign-in span:hover {
+    color: #303030;
+    cursor:pointer;
+}
+
+.sign-in span:hover::after,
+.sign-in span:focus::after {
+    width: 100%;
+    transition: width .5s;
+  
+}
+
+/*---username and password----*/
+
+.log-in-card form {
+    margin: 5em auto;
+    width: fit-content;
+}
+
+
+.user-row{
+ 
+}
+.user-row * {
+    display: block;
+}
+
+.user-row label {
+    font-size: 14px;
+    color: #909097;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    display: block;
+    cursor: text;
+    /* transition: .5s;
+    transform: translateY(33px); */
+}
+
+.user-row input[type=text],
+.user-row input[type=password] {
+    outline: none;
+    border: none;
+    width: 400px;
+    border-bottom: 3px solid #FFD580;
+    margin-top: 10px;
+    transition: all 0.45s ease;
+    font-size:larger;
+}
+
+.user-row  + .user-row{
+    margin-top: 3.4em;
+}
+
+.user-input:hover ~ #user-label{
+    color: pink;;
+}
+
+.user-row input[type=text]:hover,
+.user-row input[type=text]:focus,
+.user-row input[type=password]:hover,
+.user-row input[type=password]:focus {
+    border: none;
+    border-bottom: 3px solid orange;
+}
+
+
+/*remember me?*/
+
+.user-remember {
+    margin: 2em 0;
+}
+.user-remember span{
+    font-size: 18px;
+    color:#909097;
+}
+/* --- sign in button --- */
+.log-in-card button{
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    /* padding: 1em 1.5em; */
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: -.9px;
+    border: 0;
+    cursor: pointer;
+    background: linear-gradient(to left, #ff713b, #ffa51d);
+    color: white;
+    border-radius: 8px;
+}
+
+
