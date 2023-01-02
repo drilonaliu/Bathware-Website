@@ -28,11 +28,27 @@
     <!--log in form-->
     <div class="log-in-card">
 
-        <div class="sign-in">
-            <span> Sign in</span>
-            <span> Sign up</span>
-
+        <div class="sign-in-container">
+            <a href="#" id="sign-in" class="active sign-in"> Sign in</a>
+            <a href="#" id="sign-up" class="sign-up"> Sign up</a>
         </div>
+
+        <script>
+            let signIn = document.getElementById("sign-in");
+            let signUp = document.getElementById("sign-up");
+            signIn.focus();
+
+            signIn.addEventListener("click", function (e) {
+                signIn.classList.add("active");
+                signUp.classList.remove("active");
+            })  
+
+            signUp.addEventListener("click", function (e) {
+                signUp.classList.add("active");
+                signIn.classList.remove("active");
+            })  
+
+        </script>
 
         <form>
             <div class="user-row">
