@@ -3,6 +3,7 @@
 }
 
 .interesting-products {
+    padding-top: 2em;
     max-width: 100%;
     display: flex;
     justify-content: space-between;

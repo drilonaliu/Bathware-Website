@@ -75,7 +75,7 @@
         "name":"Low Level Toilet Pan",
         "filename":"product02.png",
         "price":169.99,
-        "discounted":true,
+        "discounted":false,
         "category":"Toilet Pans",
         "id":"0010"
     },
@@ -99,7 +99,7 @@
         "name":"Top Basin",
         "filename":"product01.png",
         "price":169.99,
-        "discounted":false,
+        "discounted":true,
         "category":"Basins",
         "id":"0013"
     },
@@ -107,9 +107,17 @@
         "name":"Low Level Toilet Pan",
         "filename":"product02.png",
         "price":169.99,
-        "discounted":true,
+        "discounted":false,
         "category":"Toilet Pans",
         "id":"0014"
+    },
+    {
+        "name":"Essential Soap Dispenser",
+        "filename":"product08.png",
+        "price":59.99,
+        "discounted":false,
+        "category":"Accesories",
+        "id":"0055"
     },
     {
         "name":"Luxury Bathtub",
@@ -128,6 +136,14 @@
         "id":"0016"
     },
     {
+        "name":"Chenille Bath Rug",
+        "filename":"product06.png",
+        "price":59.99,
+        "discounted":false,
+        "category":"Accesories",
+        "id":"0060"
+    },
+    {
         "name":"Top Basin",
         "filename":"product01.png",
         "price":169.99,
@@ -139,9 +155,17 @@
         "name":"Low Level Toilet Pan",
         "filename":"product02.png",
         "price":169.99,
-        "discounted":true,
+        "discounted":false,
         "category":"Toilet Pans",
         "id":"0018"
+    },
+    {
+        "name":"Blue Bath Rug",
+        "filename":"product05.png",
+        "price":59.99,
+        "discounted":false,
+        "category":"Accesories",
+        "id":"0062"
     },
     {
         "name":"Luxury Bathtub",
@@ -155,9 +179,33 @@
         "name":"Long Neck Tap",
         "filename":"product04.png",
         "price":169.99,
-        "discounted":false,
+        "discounted":true,
         "category":"Taps",
         "id":"0020"
+    },
+    {
+        "name":"Essential Soap Dispenser",
+        "filename":"product08.png",
+        "price":59.99,
+        "discounted":false,
+        "category":"Accesories",
+        "id":"0053"
+    },
+    {
+        "name":"Luxury Soap Dispenser",
+        "filename":"product07.png",
+        "price":19.99,
+        "discounted":true,
+        "category":"Accesories",
+        "id":"0056"
+    },
+    {
+        "name":"Blue Bath Rug",
+        "filename":"product05.png",
+        "price":59.99,
+        "discounted":false,
+        "category":"Accesories",
+        "id":"0061"
     },
     {
         "name":"Top Basin",
@@ -166,6 +214,14 @@
         "discounted":false,
         "category":"Basins",
         "id":"0021"
+    },
+    {
+        "name":"Blue Bath Rug",
+        "filename":"product05.png",
+        "price":59.99,
+        "discounted":true,
+        "category":"Accesories",
+        "id":"0063"
     },
     {
         "name":"Low Level Toilet Pan",
@@ -187,7 +243,7 @@
         "name":"Long Neck Tap",
         "filename":"product04.png",
         "price":169.99,
-        "discounted":false,
+        "discounted":true,
         "category":"Taps",
         "id":"0024"
     },
@@ -203,7 +259,7 @@
         "name":"Low Level Toilet Pan",
         "filename":"product02.png",
         "price":169.99,
-        "discounted":true,
+        "discounted":false,
         "category":"Toilet Pans",
         "id":"0026"
     },
@@ -248,12 +304,28 @@
         "id":"0031"
     },
     {
+        "name":"Chenille Bath Rug",
+        "filename":"product06.png",
+        "price":59.99,
+        "discounted":false,
+        "category":"Accesories",
+        "id":"0059"
+    },
+    {
         "name":"Long Neck Tap",
         "filename":"product04.png",
         "price":169.99,
-        "discounted":false,
+        "discounted":true,
         "category":"Taps",
         "id":"0032"
+    },
+    {
+        "name":"Essential Soap Dispenser",
+        "filename":"product08.png",
+        "price":59.99,
+        "discounted":false,
+        "category":"Accesories",
+        "id":"0054"
     },
     {
         "name":"Top Basin",
@@ -278,6 +350,14 @@
         "discounted":false,
         "category":"Bathtubs",
         "id":"0035"
+    },
+    {
+        "name":"Chenille Bath Rug",
+        "filename":"product06.png",
+        "price":59.99,
+        "discounted":true,
+        "category":"Accesories",
+        "id":"0058"
     },
     {
         "name":"Long Neck Tap",
@@ -331,7 +411,7 @@
         "name":"Low Level Toilet Pan",
         "filename":"product02.png",
         "price":169.99,
-        "discounted":true,
+        "discounted":false,
         "category":"Toilet Pans",
         "id":"0042"
     },
@@ -344,10 +424,18 @@
         "id":"0043"
     },
     {
+        "name":"Luxury Soap Dispenser",
+        "filename":"product07.png",
+        "price":19.99,
+        "discounted":false,
+        "category":"Accesories",
+        "id":"0057"
+    },
+    {
         "name":"Long Neck Tap",
         "filename":"product04.png",
         "price":169.99,
-        "discounted":false,
+        "discounted":true,
         "category":"Taps",
         "id":"0044"
     },
@@ -382,5 +470,37 @@
         "discounted":false,
         "category":"Taps",
         "id":"0048"
+    },
+    {
+        "name":"Blue Bath Rug",
+        "filename":"product05.png",
+        "price":59.99,
+        "discounted":true,
+        "category":"Accesories",
+        "id":"0049"
+    },
+    {
+        "name":"Chenille Bath Rug",
+        "filename":"product06.png",
+        "price":59.99,
+        "discounted":false,
+        "category":"Accesories",
+        "id":"0050"
+    },
+    {
+        "name":"Luxury Soap Dispenser",
+        "filename":"product07.png",
+        "price":19.99,
+        "discounted":false,
+        "category":"Accesories",
+        "id":"0051"
+    },
+    {
+        "name":"Essential Soap Dispenser",
+        "filename":"product08.png",
+        "price":59.99,
+        "discounted":false,
+        "category":"Accesories",
+        "id":"0052"
     }
 ]
