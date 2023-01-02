@@ -3,6 +3,13 @@
     display:flex;
     margin: 30px 0 35px;
 }
+
+.info {
+    display:none;
+    color:var(--color-text);
+    padding-top: 2em;
+}
+
 .price-input .field {
     height:45px;
     width:100%; /*problem*/
@@ -31,6 +38,7 @@
 }
 
 .product-specifications {
+    padding-bottom: 1em;
     max-width: 60%;
     margin: 0 auto;
     justify-content: space-around;
@@ -85,8 +93,4 @@ input[type="range"]::-moz-range-thumb{
     pointer-events: auto;
     -moz-appearance: none;
     background: var(--color-primary);
-}
-
-.spacer {
-    height:4em;
 }

@@ -11,6 +11,8 @@ const rangeInput = document.querySelectorAll(".range-input input");
 priceInput = document.querySelectorAll(".price-input input");
 progress = document.querySelector(".slider .progress");
 
+let info = document.querySelector(".product-cards .info");
+
 let priceGap = 100;
 
 rangeInput.forEach(input => {
@@ -25,11 +27,13 @@ rangeInput.forEach(input => {
             else {
                 rangeInput[1].value = minVal + priceGap;
             }
+
         } else {
             priceInput[0].value = minVal;
             priceInput[1].value = maxVal;
             progress.style.left = (minVal / rangeInput[0].max) * 100 + "%";
             progress.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+            priceCategory(minVal, maxVal);
         }
 
     });
@@ -40,7 +44,7 @@ priceInput.forEach(input => {
         let minVal = parseInt(priceInput[0].value),
             maxVal = parseInt(priceInput[1].value);
 
-        if ((maxVal - minVal >= priceGap) && maxVal <= 1000 && minVal >=0 ) {
+        if ((maxVal - minVal >= priceGap) && maxVal <= 1000 && minVal >= 0) {
             if (e.target.className === "input-min") {
                 rangeInput[0].value = minVal;
                 progress.style.left = (minVal / rangeInput[0].max) * 100 + "%";
@@ -49,9 +53,38 @@ priceInput.forEach(input => {
                 rangeInput[1].value = maxVal;
                 progress.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
             }
+            priceCategory(minVal, maxVal);
         }
     });
 });
+
+function priceCategory(minVal, maxVal) {
+    let products = document.querySelectorAll(".product-cards .product");
+    info.style.display = "none";
+    let counter=0;
+    products.forEach(function (product) {
+        price = parseInt(product.getElementsByClassName("price")[0].firstChild.data.substring(1));
+        console.log(price);
+        if (price < minVal || price > maxVal) {
+            product.style.display = "none";
+            console.log("removed");
+        }
+        else {
+            product.style.display = "block";
+            console.log("added");
+        }
+        if (product.style.display === "none")
+            counter++;
+    });
+    if(counter==products.length){
+        let p = document.createElement("p");
+        // p.className = 'info';
+        // container.append(p);
+        // p.innerHTML = info;
+
+        info.style.display = "flex";
+    }
+}
 
 function loadFromCategory(category) {
     let products = JSON.parse(localStorage.getItem("products"));

@@ -42,6 +42,7 @@
     width: 253px;
     padding: 0 1%;
     float: left;
+    transition: display 0.15s ease-in;
 }
 
 .product-cards a{
