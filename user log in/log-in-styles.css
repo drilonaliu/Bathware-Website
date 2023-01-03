@@ -5,13 +5,15 @@ body {
     font-family: 'Roboto';
 }
 
-/*--title--*/
 
 
 body {
     padding: 1em;
 }
 
+/*Log In / Sign Up Page*/
+
+/*-------- Title -----*/
 .for-title {
     margin-top: 1em;
     display: flex;
@@ -45,19 +47,24 @@ body {
 }
 
 .close {
-    border: 1px solid green;
+    margin-right: 50px;
 }
 
+.close img {
+    transition: width .3s;
+}
 
-/*--- log in form --- */
+.close img:hover {
+    width: 20px;
+}
+
+/*--- Log in form ----------------- */
 .log-in-card {
     width: 60%;
     margin: 5em auto;
 }
 
-
 /*sign in sign up*/
-
 .sign-in-container {
     margin: 0 auto;
     width: fit-content;
@@ -115,7 +122,7 @@ body {
     background: #ffae00;
 }
 
-/*---username and password----*/
+/*----- - UserName and password -------*/
 .log-in-card form {
     margin: 5em auto;
     width: fit-content;
@@ -133,8 +140,6 @@ body {
     margin: 0;
     display: block;
     cursor: text;
-    /* transition: .5s;
-    transform: translateY(33px); */
 }
 
 .user-row input[type=text],
@@ -145,7 +150,7 @@ body {
     border-bottom: 3px solid #FFD580;
     margin-top: 10px;
     transition: all 0.45s ease;
-    font-size: larger;
+    font-size: 18px;
 }
 
 .user-row+.user-row {
@@ -166,8 +171,7 @@ body {
 }
 
 
-/*remember me?*/
-
+/*remember me check box*/
 .user-remember {
     margin: 2em 0;
 }
@@ -177,12 +181,11 @@ body {
     color: #909097;
 }
 
-/* --- sign in button --- */
+/* --- Sign in Button --- */
 .log-in-card button {
     display: inline-block;
     width: 100%;
     height: 50px;
-    /* padding: 1em 1.5em; */
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
@@ -192,4 +195,121 @@ body {
     background: linear-gradient(to left, #ff713b, #ffa51d);
     color: white;
     border-radius: 8px;
+}
+
+
+/*Forgot Password?*/
+.forgot-password {
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    display: block;
+    width: fit-content;
+    border-bottom: 3px solid #FFD580;
+    margin: 3em auto;
+    transition: all .2s;
+}
+
+.forgot-password:hover {
+    padding-bottom: .05em;
+    border-color: orange;
+}
+
+.forgot-password-form p {
+    width: 400px;
+}
+
+.forgot-password-form button {
+    margin-top: 2.4em;
+}
+
+/* ------ Sign up form --------*/
+
+.gender-selection,
+.birthday-select {
+    margin-top: 10px;
+    border: none;
+    border-bottom: 2px solid #FFD580;
+    font-size: 15px;
+    width: 100%;
+    padding: .3em;
+    padding-left: 0;
+    transition: all .3s;
+}
+
+.gender-selection:hover,
+.gender-selection:focus,
+.birthday-select:hover,
+.birthday-select:focus {
+    outline: none;
+    border-color: orange;
+}
+
+.sign-up-form button {
+    margin-top: 2.3em;
+}
+
+
+/*-- Reset Password Green Email -- */
+
+
+
+/*Verification email succesful!*/
+
+.forgot-password-form img{
+    display: block;
+    margin: 0 auto;
+}
+
+.forgot-password-form h2{
+    text-align: center;
+    margin-top:1em;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+/* Succesful email sent*/
+
+.successful-email{
+    border-radius:20px;
+    padding: 1.4em;
+}
+.successful-email > img{
+    display: block;
+    margin: 0 auto;
+}
+
+.successful-email > p {
+    margin: 0 auto;
+    text-decoration: underline;
+    text-decoration-color: green;
+    margin-top: 1em;
+    font-size: 18px;
+    padding: .5em;
+    border-radius: 10px;
+    line-height: 1.5em;
+}
+
+.green-message {
+    background-color: rgb(144, 238, 144);
+    border-radius: 10px;
+    padding: .5em;
+    width: 350px;   
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.green-message img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.green-message p {
+    display: inline-block;
+    color: white;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    margin-left: 5px;
+    width: 300px;
+    text-align: center;
 }

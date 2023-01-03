@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="log-in-styles.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- Title ---------->
+    <div class="for-title">
+        <div class="title">
+            <h4> My <span> account</span></h4>
+        </div>
+        <div class="close">
+            <a href="../main.html"> <img src="../images/close.png" width="15px"> </a>
+        </div>
+    </div>
+
+    <!-------- Log In Form ------------------------------------------------------------------------------>
+    <div class="log-in-card">
+        <div class="sign-in-container">
+            <a href="#" id="sign-in" class="active sign-in"> Sign in</a>
+            <a href="#" id="sign-up" class="sign-up"> Sign up</a>
+        </div>
+
+        <form class="sign-in-form" id="sign-in-form" action="main.html">
+            <div class="user-row">
+                <label for="username" id="user-label"> Username </label>
+                <input class="user-input" type="text" name="username" id="username" autocomplete="username" required>
+            </div>
+
+            <div class="user-row">
+                <label for="password"> Password </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+
+            <div class="user-remember">
+                <input type="checkbox" name="rememberme">
+                <label> Remember me </span>
+            </div>
+
+            <button type="submit">Sign in</button>
+            <a href="reset-password.html" id="forgot-password" class="forgot-password"> Forgot password? </a>
+
+        </form>
+
+        <!---------------------- Sign Up  Form ----------------------------------------------------------------------->
+        <form class="sign-up-form" id="sign-up-form" action="main.html">
+
+            <div class="user-row">
+                <label for="name" id="user-label"> Name </label>
+                <input class="user-input" type="text" name="name" id="name" autocomplete="name" required>
+            </div>
+
+            <div class="user-row">
+                <label for="username" id="user-label"> Username </label>
+                <input class="user-input" type="text" name="username" id="username" autocomplete="username" required>
+            </div>
+
+            <div class="user-row">
+                <select name="Gjinia" class="gender-selection" id="txtList" list="gender" required>
+                    <datalist id="gender">
+                        <option> -- Select Gender -- </option>
+                        <option value="01">Male</option>
+                        <option value="02">Female</option>
+                    </datalist>
+                </select>
+            </div>
+
+            <div class="user-row">
+                <label for="birthday"> Birthday </label>
+                <input type="date" class="birthday-select" name="birthday" id="birthday" required>
+            </div>
+
+            <div class="user-row">
+                <label for="email" id="user-label"> Email </label>
+                <input class="user-input" type="text" name="email" id="email" autocomplete="email" required>
+            </div>
+
+            <div class="user-row">
+                <label for="passowrd"> Password </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+
+            <div class="user-row">
+                <label for="passowrd"> Re-write password </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+
+    <script src="log-in-script.js">  </script>
+</body>
+
+</html>
