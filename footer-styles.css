@@ -1,6 +1,6 @@
-
-
 /*-----------BLOGS----------------------*/
+
+
 .blog-sec * {
     margin: 0;
     padding: 0;
@@ -8,8 +8,37 @@
     font-family: 'Roboto';
 }
 
+
+.title {
+    margin: 4em auto;
+    width: fit-content;
+}
+
+.title h4 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.title h4 span {
+    color: #ffae00;
+}
+
+
+.tline {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #303030;
+    border-bottom: 3px solid #303030;
+    opacity: 0.8;
+    width: 60px;
+    height: 2px;
+}
+
+
 .blog-sec {
-    padding: 5em 12em 3em 12em;
+    /* padding: 5em 12em 3em 12em; */
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .blog-sec h4 {
@@ -22,34 +51,13 @@
     letter-spacing: -0.9px;
 }
 
-.title {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.title h4 span {
-    color: #ffae00;
-}
-
-.tline {
-    background-color: #303030;
-    border-bottom: 3px solid #303030;
-    opacity: 0.8;
-    width: 60px;
-    height: 2px;
-    margin: auto 1em;
-}
-
 .blogs {
     margin-top: 5em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .blog {
     margin-right: 10px;
+    display: inline-block;
 }
 
 .bcontent {
@@ -84,11 +92,13 @@
     background-color: #303030;
     padding: 1em 1em;
     margin-top: .9em;
+    transition: all .5s;
 }
 
 .blog button:hover {
     outline: none;
     background-color: #ffae00;
+    cursor: pointer;
 }
 
 
@@ -113,8 +123,86 @@
     background-color: #8f8f8f;
 }
 
+/*blog popup*/
 
-/*-----------------CARDS-----------------------*/
+.popup button {
+    background: transparent;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1;
+    display: none;
+}
+
+.popup-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);   
+    background: #fff;
+    width: 50%;
+    height: 700px;
+    overflow-y: scroll;
+    text-align: justify;
+    z-index: 2;
+    padding: 2em;
+}
+
+.popup-content button{
+    display: block;
+    margin-left: auto;
+}
+.popup-content button img{
+    width: 20px;
+    transition:  all .4s;
+}
+
+.popup-content button img:hover,
+.popup-content button img:hover{
+    width: 30px;
+    cursor: pointer;
+}
+.popup-content .pic {
+    display: block;
+    width: fit-content;
+    object-fit: cover;
+}
+
+.popup-content .date {
+    margin-top: 1em;
+    width: fit-content;
+    border-bottom: 2px solid orange;
+}
+
+.popup-content h1 {
+    margin-top: 1em;
+}
+
+.popup-content p {
+    margin-top: .5em;
+    font-size: 1.1em;
+    letter-spacing: .9px;
+}
+
+.popup.active .overlay{
+    display: block ;
+}
+
+.popup.active .popup-content{
+    transition: all .5s;
+    transform: translate(-50%, -50%) scale(1);  
+}
+
+/*-------------------------------------CARDS------------------------------------------------------------*/
 .cardsec * {
     margin: 0;
     padding: 0;
