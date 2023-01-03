@@ -1,0 +1,155 @@
+:root{
+    --color-primary:#ffae00;
+    --color-text:#303030;
+    --color-card-background:#f5f6f8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white; */
+    font-family: 'Roboto';
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    /*temporary change since I'm working on firefox */
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: var(--color-primary);
+}
+
+button {
+    color: white;
+    background-color: var(--color-text);
+    border: none;
+    padding: 1em 2em;
+}
+
+.products a{
+    color:white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color:#F5F5EF;
+    padding:10px 3% 0px 3%;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 10px;
+  }
+  
+.navbar li {
+  display: inline-block;
+  }
+  
+.navbar-links li a {
+    color: #3b3b3b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 650;
+  }
+  
+.navbar-links li a:hover {
+    color: orange;
+  }
+
+.navbar-links li a:active{
+    color: orange;
+}
+.nav-image{
+    margin-right: 10px;
+}
+.brand{
+    font-size: 2em;
+    font-weight: 800;
+    padding-left: 15px;
+    letter-spacing: 1.8px;
+    line-height: 2em;
+}
+.brand span{
+    color: orange;
+}
+.brand img{
+    width: 42px;
+    height: 42px;
+}
+.navbar-icons li img{
+    padding: 7px 8px;
+}
+.image-slider{
+    background-color: #F5F5EF;
+    text-align: center;
+    padding: 7% 20% 15% 20%;
+}
+#test{
+    float:left;
+    padding-right:25px;
+}
+.image-slider-text{
+    background-color: #F5F5EF;
+    text-align: justify;
+    padding-top: 4%;
+}
+.image-slider-text p{
+    color: #888;
+    margin-bottom: 2.1em;
+}
+.image-slider-text h1{
+    font-weight: 1000;
+    font-size: 2.1em;
+    margin-bottom: 0.7em;
+}
+.image-slider-text h4{
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 0.7em;
+}
+
+#button{
+    padding: 12px 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border:#F5F5EF;
+    font-size: 0.8em;
+}
+#button:hover{
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.categories{
+    padding:0 10% 4% 12%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.categories ul{
+    list-style-type: none;
+
+}
+.categories li{
+    display: inline-block;
+    padding-right: 4em;
+    margin-top: 12%;
+}
+.categories li p{
+    margin-top: 37px;
+    text-align: center;
+}
+.categories li:hover p{
+    color: orange;
+}
+.categories svg{
+    fill: #ffae00 !important;
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="payment-info">
+        <h3> Payment Info.</h3>
+        <h6> Payment Method </h6>
+        <form method="post">
+            <input type="radio" value="credit-card" name="credit-card">
+            <label for="credit-card">
+                <img src="images/visa.png"> Credit Card
+            </label>
+
+            <input type="radio" value="PayPal" name="PayPal">
+            <label for="paypal">
+                <img src="images/mastercard.png"> PayPal
+            </label>
+
+            <input type="text">
+            <label for="card-name">Name on Card: </label>
+
+            <input type="password" value="card-number">
+            <label for="card-number"> Card Number:</label>
+
+            <label for="txtList"> Month
+                <select id="txtList" list="months">
+                    <datalist id="months">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+
+                    </datalist>
+                </select>
+            </label>
+
+            <label for="txtList"> Experation date
+                <select id="txtList" list="years">
+                    <datalist id="years">
+                        <option value="01">2022</option>
+                        <option value="02">2023</option>
+                        <option value="03">2024</option>
+                        <option value="04">2025</option>
+                        <option value="05">2026</option>
+                        <option value="06">2027</option>
+                        <option value="07">2028</option>
+                        <option value="08">2029</option>
+                        <option value="09">2030</option>
+                    </datalist>
+                </select>
+            </label>
+
+
+            <label for="cvv"> CVV
+                <input type="number">
+            </label>
+        </form>
+    </div>
+</body>
+
+</html>
