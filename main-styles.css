@@ -170,6 +170,7 @@ a{
     background-color: #F5F5EF;
     text-align: center;
     padding: 7% 20% 15% 20%;
+    margin: 0 auto;
 }
 #test{
     float:left;
