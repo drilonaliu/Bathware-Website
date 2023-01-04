@@ -469,84 +469,71 @@
 <script>
     var currentTime = new Date().getHours();
     if (document.body) {
-        if (true) {
-            // let arr1 = document.getElementsByClassName(".load-more");
+        if (7 <= currentTime && currentTime < 20) {
+            document.body.style.backgzround = "#fff";
+        }
+        else {
             document.documentElement.style.setProperty('--color-background', '#94785d');
             document.documentElement.style.setProperty('--color-card-background', '#4a4a4e');
             let button1 = document.getElementById("button1");
             button1.style.color = "#303030";
             button1.style.backgroundColor = "#f5f5ef";
-
+    
             let productPrice = document.querySelectorAll(".product p");
             productPrice.forEach(element => {
                 element.style.color = "#f5f5ef";
             });
-
+    
             let productDesc = document.querySelectorAll(".product-description a");
             productDesc.forEach(element => {
                 element.style.color = "#f5f5ef";
             })
-
+    
             let h2text = document.querySelectorAll(".title h2");
             h2text.forEach(element => {
                 element.style.color = "#f5f5ef";
             });
-
+    
             let h4text = document.querySelectorAll(".title h4");
             h4text.forEach(element => {
                 element.style.color = "#f5f5ef";
             });
-
+    
             let categories = document.querySelectorAll(".categories p");
             categories.forEach(element => {
                 element.style.color = "#f5f5ef";
             });
-
+    
             let blogP = document.querySelectorAll(".blog p");
             blogP.forEach(element => {
                 element.style.color = "#f5f5ef";
             });
-
+    
             let blogButton = document.querySelectorAll(".blog button");
             blogButton.forEach(element => {
                 element.style.backgroundColor = "#f5f5ef";
             });
-
+    
             let blogA = document.querySelectorAll(".blog a");
             blogA.forEach(element => {
                 element.style.color = "#303030";
             });
-
+    
             let imageSliderh1 = document.querySelectorAll(".image-slider-text h1");
             imageSliderh1.forEach(element => {
                 element.style.color = "#f5f5ef";
             });
-
+    
             let imageSliderh4 = document.querySelectorAll(".image-slider-text h4");
             imageSliderh4.forEach(element => {
                 element.style.color = "#f5f5ef";
             });
-
+    
             let imageSliderP = document.querySelectorAll(".image-slider-text p");
             imageSliderP.forEach(element => {
                 element.style.color = "#f5f5ef";
             });
-
-            // Array.from(arr1).forEach(element => {
-            // console.log("hi");
-            // });
-
-            // Array.from(document.getElementsByClassName(".load-more-button button")).forEach(element => {
-            //     console.log("hi");
-            //     element.style.color = "#303030";
-            //     element.style.backgroundColor = "#f5f5ef";
-            // });
-            // document.getElementsByClassName(".products button").style.color = "#303030";
-            // document.getElementsByClassName(".products button").style.backgroundColor = "#f5f5ef";
             document.body.style.background = "#303030";
-        }
-        else {
-            document.body.style.background = "#fff";
         }
     }
 </script>
