@@ -11,7 +11,7 @@ function displayCartProduct(cartProduct) {
     div.setAttribute('id', "cartRowID" + cartProduct.id);
     div.innerHTML = ` <div class="product-cart">
                             <div class="product-image">
-                                <img src="images/${cartProduct.filename}">
+                                <img src="../../images/${cartProduct.filename}">
                             </div>
                             <div class="cart-product-name">
                                 <p class="product-name"> ${cartProduct.name}</p>
@@ -30,14 +30,14 @@ function displayCartProduct(cartProduct) {
                         <div class="product-quantity">
                             <form id='myform' method='POST' class='quantity' action='#'>
                                 <input name='minus' type='button' value='' class='qtyminus minus' field='quantity' />
-                                <label  class = "minus" onclick="decrement(${cartProduct.id})" id="minus" for='minus'>  <img src="images/minus.png" width="10px"> </label>
+                                <label  class = "minus" onclick="decrement(${cartProduct.id})" id="minus" for='minus'>  <img src="../../images/minus.png" width="10px"> </label>
                                
                                 <input type='number' name='quantity' value='1' class='qty' />
                                 <label class="rez" id="rez${cartProduct.id}" for="quantity"> 1 </label>
 
                                 <input type='button' value='' class='qtyplus plus' field='quantity' />
                                 <label class = "plus" onclick="increment(${cartProduct.id})" id="plus" for="plus"> 
-                                <img src="images/plus.png" width="10px">
+                                <img src="../../images/plus.png" width="10px">
                                 </label>
                             </form>
                         </div>
@@ -45,7 +45,7 @@ function displayCartProduct(cartProduct) {
                          <p id="price${cartProduct.id}"class="product-price"> ${cartProduct.price} </p>
 
                         <button class="remove-product" onclick="removeFromCart(${cartProduct.id})">
-                            <img src="images/close.png" width="15px">
+                            <img src="../../images/close.png" width="15px">
                         </button>
                      `
     cartProducts.appendChild(div);
