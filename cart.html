@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="cart.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 
@@ -56,131 +57,15 @@
                     </div>
                 </div>
 
-                <div class="cart-products">
-                    <!--row1-->
-                    <div class="cart-product-row">
 
-                        <div class="cart-product">
-                            <div class="product-image">
-                                <img src="images/product01.png">
-                            </div>
-                            <div class="cart-product-name">
-                                <p class="product-name"> Sandqvist</p>
-                                <p class="product-company"> BATA </p>
-                            </div>
-                        </div>
-
-                        <div class="product-size">
-                            <select class="size" name="size">
-                                <option> 1 </option>
-                                <option> 2 </option>
-                                <option> 3 </option>
-                            </select>
-                        </div>
-
-                        <div class="product-quantity">
-                            <form id='myform' method='POST' class='quantity' action='#'>
-                                <input type='button' value='' class='qtyminus minus' field='quantity' />
-                                <img src="images/minus.png" width = "10px">
-                                <input type='text' name='quantity' value='0' class='qty' />
-                                <input type='button' value='' class='qtyplus plus' field='quantity' />
-                                <img src="images/plus.png" width="10px">
-                            </form>
-                        </div>
-
-                        <p class="product-price"> $110.99 </p>
-
-                        <button class="remove-product">
-                            <img src="images/close.png" width="15px">
-                        </button>
-
-                    </div>
-
-                    <!---row 2---->
-                    <div class="cart-product-row">
-
-                        <div class="cart-product">
-                            <div class="product-image">
-                                <img src="images/product04.png">
-                            </div>
-                            <div class="cart-product-name">
-                                <p class="product-name"> Sandqvist</p>
-                                <p class="product-company"> BATA </p>
-                            </div>
-                        </div>
-
-                        <div class="product-size">
-                            <select class="size" name="size">
-                                <option> 1 </option>
-                                <option> 2 </option>
-                                <option> 3 </option>
-                            </select>
-                        </div>
-
-                        <div class="product-quantity">
-                            <form id='myform' method='POST' class='quantity' action='#'>
-                                <input type='button' value='' class='qtyminus minus' field='quantity' />
-                                <img src="images/minus.png" width = "10px">
-                                <input type='text' name='quantity' value='0' class='qty' />
-                                <input type='button' value='' class='qtyplus plus' field='quantity' />
-                                <img src="images/plus.png" width="10px">
-                            </form>
-                        </div>
-
-                        <p class="product-price"> $110.99 </p>
-
-            
-                        <button class="remove-product">
-                            <img src="images/close.png" width="15px">
-                        </button>
-
-                    </div>
-
-                    <!--- row 3----->
-                    <div class="cart-product-row">
-
-                        <div class="cart-product">
-                            <div class="product-image">
-                                <img src="images/product03.png">
-                            </div>
-                            <div class="cart-product-name">
-                                <p class="product-name"> Sandqvist</p>
-                                <p class="product-company"> BATA </p>
-                            </div>
-                        </div>
-
-                        <div class="product-size">
-                            <select class="size" name="size">
-                                <option> 1 </option>
-                                <option> 2 </option>
-                                <option> 3 </option>
-                            </select>
-                        </div>
-
-                        <div class="product-quantity">
-                            <form id='myform' method='POST' class='quantity' action='#'>
-                                <input type='button' value='' class='qtyminus minus' field='quantity' />
-                                <img src="images/minus.png" width = "10px">
-                                <input type='text' name='quantity' value='0' class='qty' />
-                                <input type='button' value='' class='qtyplus plus' field='quantity' />
-                                <img src="images/plus.png" width="10px">
-                            </form>
-                        </div>
-                        <p class="product-price"> $110.99 </p>
-
-                        <button class="remove-product">
-                            <img src="images/close.png" width="15px">
-                        </button>
-
-                    </div>
+                <div class="cart-products" id="cart-products">
+                    <!-- cart products go here from script  -->
                 </div>
 
-
                 <section>
-
                     <div class="go-back">
                         <img src="images/left.png" width="10px">
-                        <span> Continue Shopping </span>
+                        <span> <a href="main.html"> Continue Shopping </a></span>
                     </div>
 
                     <!----- total price ----->
@@ -199,14 +84,14 @@
 
                         <div class="total">
                             <span class="total-text"> Total: </span>
-                            <span class="total-price"> $470.98</span>
+                            <span id="total-price" class="total-price"> $470.98</span>
                         </div>
                     </div>
                 </section>
+
+
             </div>
         </div>
-
-
 
         <!----------- Payment Info Card ---------------------->
         <div class="payment-info-card">
@@ -300,6 +185,13 @@
         </div>
     </div>
 
+  
 </body>
+
+
+<script src="cart-js/cart-data.js" type="text/JavaScript"></script>
+<script src="cart-js/cart-functions.js" type="text/JavaScript"></script>
+<script src="cart-js/cart-script.js" type="text/JavaScript"></script>
+
 
 </html>

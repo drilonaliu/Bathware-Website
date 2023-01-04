@@ -54,10 +54,13 @@
 
 .blog {
     margin-top: 2em;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     display: inline-block;
 }
 
+.blog + .blog{
+    margin-left: 10px;
+}
 .bcontent {
     width: 343px;
 }
@@ -101,7 +104,6 @@
 
 
 /*-------- BlogSlider------------------------------------------------*/
-
 
 /*three dots nav*/
 .blog-sec nav {
@@ -166,6 +168,10 @@
     margin-left: -60%;
 }
 
+
+.blogs-page{
+    margin-bottom: 4em;
+}
 /*----------Blog PopUp------------------------------------------*/
 
 .popup button {

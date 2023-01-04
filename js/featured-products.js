@@ -1,3 +1,5 @@
+
+
 fetch("js/products.json")
     .then(response => response.json())
     .then(products => {
@@ -21,7 +23,7 @@ function loadInitialItems() {
                     <a href="product-details.html?id=${product.id}">
                         <img class="product-image" src="images/${product.filename}" alt="${product.name} Picture">
                         <div class="image-overlay">
-                            <button><a href="#">ADD TO CART <img src="images/cart-icon.png" alt="cart-icon"></a></button>
+                            <button onclick="addToCart(${product.id})"><a>ADD TO CART <img src="images/cart-icon.png" alt="cart-icon"></a></button>
                             <nav>
                                 <ul class="product-navbar">
                                     <li><a href="#"><img src="images/heart-icon.png" alt="heart"></a></li>
@@ -50,9 +52,13 @@ function loadInitialItems() {
             container.append(div);
             div.innerHTML = out;
         }
-
         counter++;
     }
+}
+
+
+function addToCart(productID) {
+    localStorage.setItem("productID"+productID, productID);
 }
 
 function calculateDiscount(product) {
@@ -72,7 +78,7 @@ function loadMore() {
                 <a href="product-details.html?id=${product.id}">
                     <img class="product-image" src="images/${product.filename}" alt="${product.name} Picture">
                     <div class="image-overlay">
-                        <button><a href="#">ADD TO CART <img src="images/cart-icon.png" alt="cart-icon"></a></button>
+                        <button onclick="addToCart(${product.id})"><a>ADD TO CART <img src="images/cart-icon.png" alt="cart-icon"></a></button>
                         <nav>
                             <ul class="product-navbar">
                                 <li><a href="#"><img src="images/heart-icon.png" alt="heart"></a></li>

@@ -1,0 +1,512 @@
+const allData = [
+    {
+        name: "Top Basin",
+        filename: "product01.png",
+        price: 169.99,
+        discounted: false,
+        category: "Basins",
+        id: "1"
+    },
+    {
+        name: "Low Level Toilet Pan",
+        filename: "product02.png",
+        price: 169.99,
+        discounted: true,
+        category: "Toilet Pans",
+        id: "2"
+    },
+    {
+        name: "Luxury Bathtub",
+        filename: "product03.png",
+        price: 169.99,
+        discounted: false,
+        category: "Bathtubs",
+        id: "3"
+    },
+    {
+        name: "Long Neck Tap",
+        filename: "product04.png",
+        price: 169.99,
+        discounted: false,
+        category: "Taps",
+        id: "4"
+    },
+    {
+        name: "Top Basin",
+        filename: "product01.png",
+        price: 169.99,
+        discounted: false,
+        category: "Basins",
+        id: "5"
+    },
+    {
+        name: "Low Level Toilet Pan",
+        filename: "product02.png",
+        price: 169.99,
+        discounted: true,
+        category: "Toilet Pans",
+        id: "6"
+    },
+    {
+        name: "Luxury Bathtub",
+        filename: "product03.png",
+        price: 169.99,
+        discounted: false,
+        category: "Bathtubs",
+        id: "7"
+    },
+    {
+        name: "Long Neck Tap",
+        filename: "product04.png",
+        price: 169.99,
+        discounted: false,
+        category: "Taps",
+        id: "8"
+    },
+    {
+        name: "Top Basin",
+        filename: "product01.png",
+        price: 169.99,
+        discounted: false,
+        category: "Basins",
+        id: "9"
+    },
+    {
+        name: "Low Level Toilet Pan",
+        filename: "product02.png",
+        price: 169.99,
+        discounted: false,
+        category: "Toilet Pans",
+        id: "10"
+    },
+    {
+        name: "Luxury Bathtub",
+        filename: "product03.png",
+        price: 169.99,
+        discounted: false,
+        category: "Bathtubs",
+        id: "11"
+    },
+    {
+        name: "Long Neck Tap",
+        filename: "product04.png",
+        price: 169.99,
+        discounted: false,
+        category: "Taps",
+        id: "12"
+    },
+    {
+        name: "Top Basin",
+        filename: "product01.png",
+        price: 169.99,
+        discounted: true,
+        category: "Basins",
+        id: "13"
+    },
+    {
+        name: "Low Level Toilet Pan",
+        filename: "product02.png",
+        price: 169.99,
+        discounted: false,
+        category: "Toilet Pans",
+        id: "14"
+    },
+    {
+        name: "Luxury Bathtub",
+        filename: "product03.png",
+        price: 169.99,
+        discounted: false,
+        category: "Bathtubs",
+        id: "15"
+    },
+    {
+        name: "Long Neck Tap",
+        filename: "product04.png",
+        price: 169.99,
+        discounted: false,
+        category: "Taps",
+        id: "16"
+    },
+    {
+        name: "Top Basin",
+        filename: "product01.png",
+        price: 169.99,
+        discounted: false,
+        category: "Basins",
+        id: "17"
+    },
+    {
+        name: "Low Level Toilet Pan",
+        filename: "product02.png",
+        price: 169.99,
+        discounted: false,
+        category: "Toilet Pans",
+        id: "18"
+    },
+
+    {
+        name: "Luxury Bathtub",
+        filename: "product03.png",
+        price: 169.99,
+        discounted: false,
+        category: "Bathtubs",
+        id: "19"
+    },
+    {
+        name: "Long Neck Tap",
+        filename: "product04.png",
+        price: 169.99,
+        discounted: true,
+        category: "Taps",
+        id: "20"
+    },
+
+    {
+        name: "Top Basin",
+        filename: "product01.png",
+        price: 169.99,
+        discounted: false,
+        category: "Basins",
+        id: "21"
+    },
+    {
+        name: "Blue Bath Rug",
+        filename: "product05.png",
+        price: 59.99,
+        discounted: true,
+        category: "Accesories",
+        id: "63"
+    },
+    {
+        name: "Low Level Toilet Pan",
+        filename: "product02.png",
+        price: 169.99,
+        discounted: true,
+        category: "Toilet Pans",
+        id: "22"
+    },
+    {
+        name: "Luxury Bathtub",
+        filename: "product03.png",
+        price: 169.99,
+        discounted: false,
+        category: "Bathtubs",
+        id: "23"
+    },
+    {
+        name: "Long Neck Tap",
+        filename: "product04.png",
+        price: 169.99,
+        discounted: true,
+        category: "Taps",
+        id: "24"
+    },
+    {
+        name: "Top Basin",
+        filename: "product01.png",
+        price: 169.99,
+        discounted: false,
+        category: "Basins",
+        id: "25"
+    },
+    {
+        name: "Low Level Toilet Pan",
+        filename: "product02.png",
+        price: 169.99,
+        discounted: false,
+        category: "Toilet Pans",
+        id: "26"
+    },
+    {
+        name: "Luxury Bathtub",
+        filename: "product03.png",
+        price: 169.99,
+        discounted: false,
+        category: "Bathtubs",
+        id: "27"
+    },
+    {
+        name: "Long Neck Tap",
+        filename: "product04.png",
+        price: 169.99,
+        discounted: false,
+        category: "Taps",
+        id: "28"
+    },
+    {
+        name: "Top Basin",
+        filename: "product01.png",
+        price: 169.99,
+        discounted: false,
+        category: "Basins",
+        id: "29"
+    },
+    {
+        name: "Low Level Toilet Pan",
+        filename: "product02.png",
+        price: 169.99,
+        discounted: true,
+        category: "Toilet Pans",
+        id: "30"
+    },
+    {
+        name: "Luxury Bathtub",
+        filename: "product03.png",
+        price: 169.99,
+        discounted: false,
+        category: "Bathtubs",
+        id: "31"
+    },
+    {
+        name: "Long Neck Tap",
+        filename: "product04.png",
+        price: 169.99,
+        discounted: true,
+        category: "Taps",
+        id: "32"
+    },
+    {
+        name: "Top Basin",
+        filename: "product01.png",
+        price: 169.99,
+        discounted: false,
+        category: "Basins",
+        id: "33"
+    },
+    {
+        name: "Low Level Toilet Pan",
+        filename: "product02.png",
+        price: 169.99,
+        discounted: true,
+        category: "Toilet Pans",
+        id: "34"
+    },
+    {
+        name: "Luxury Bathtub",
+        filename: "product03.png",
+        price: 169.99,
+        discounted: false,
+        category: "Bathtubs",
+        id: "35"
+    },
+    {
+        name: "Long Neck Tap",
+        filename: "product04.png",
+        price: 169.99,
+        discounted: false,
+        category: "Taps",
+        id: "36"
+    },
+    {
+        name: "Top Basin",
+        filename: "product01.png",
+        price: 169.99,
+        discounted: false,
+        category: "Basins",
+        id: "37"
+    },
+    {
+        name: "Low Level Toilet Pan",
+        filename: "product02.png",
+        price: 169.99,
+        discounted: true,
+        category: "Toilet Pans",
+        id: "38"
+    },
+    {
+        name: "Luxury Bathtub",
+        filename: "product03.png",
+        price: 169.99,
+        discounted: false,
+        category: "Bathtubs",
+        id: "39"
+    },
+    {
+        name: "Long Neck Tap",
+        filename: "product04.png",
+        price: 169.99,
+        discounted: false,
+        category: "Taps",
+        id: "40"
+    },
+    {
+        name: "Top Basin",
+        filename: "product01.png",
+        price: 169.99,
+        discounted: false,
+        category: "Basins",
+        id: "41"
+    },
+    {
+        name: "Low Level Toilet Pan",
+        filename: "product02.png",
+        price: 169.99,
+        discounted: false,
+        category: "Toilet Pans",
+        id: "42"
+    },
+    {
+        name: "Luxury Bathtub",
+        filename: "product03.png",
+        price: 169.99,
+        discounted: false,
+        category: "Bathtubs",
+        id: "43"
+    },
+    {
+        name: "Long Neck Tap",
+        filename: "product04.png",
+        price: 169.99,
+        discounted: true,
+        category: "Taps",
+        id: "44"
+    },
+    {
+        name: "Top Basin",
+        filename: "product01.png",
+        price: 169.99,
+        discounted: false,
+        category: "Basins",
+        id: "45"
+    },
+    {
+        name: "Low Level Toilet Pan",
+        filename: "product02.png",
+        price: 169.99,
+        discounted: true,
+        category: "Toilet Pans",
+        id: "46"
+    },
+    {
+        name: "Luxury Bathtub",
+        filename: "product03.png",
+        price: 169.99,
+        discounted: false,
+        category: "Bathtubs",
+        id: "47"
+    },
+    {
+        name: "Long Neck Tap",
+        filename: "product04.png",
+        price: 169.99,
+        discounted: false,
+        category: "Taps",
+        id: "48"
+    },
+    {
+        name: "Blue Bath Rug",
+        filename: "product05.png",
+        price: 59.99,
+        discounted: true,
+        category: "Accesories",
+        id: "49"
+    },
+    {
+        name: "Chenille Bath Rug",
+        filename: "product06.png",
+        price: 59.99,
+        discounted: false,
+        category: "Accesories",
+        id: "50"
+    },
+    {
+        name: "Luxury Soap Dispenser",
+        filename: "product07.png",
+        price: 19.99,
+        discounted: false,
+        category: "Accesories",
+        id: "51"
+    },
+    {
+        name: "Essential Soap Dispenser",
+        filename: "product08.png",
+        price: 59.99,
+        discounted: false,
+        category: "Accesories",
+        id: "52"
+    },
+
+    {
+        name: "Essential Soap Dispenser",
+        filename: "product08.png",
+        price: 59.99,
+        discounted: false,
+        category: "Accesories",
+        id: "53"
+    },
+
+    {
+        name: "Essential Soap Dispenser",
+        filename: "product08.png",
+        price: 59.99,
+        discounted: false,
+        category: "Accesories",
+        id: "54"
+    },
+    {
+        name: "Essential Soap Dispenser",
+        filename: "product08.png",
+        price: 59.99,
+        discounted: false,
+        category: "Accesories",
+        id: "55"
+    },
+
+    {
+        name: "Luxury Soap Dispenser",
+        filename: "product07.png",
+        price: 19.99,
+        discounted: true,
+        category: "Accesories",
+        id: "56"
+    },
+    {
+        name: "Luxury Soap Dispenser",
+        filename: "product07.png",
+        price: 19.99,
+        discounted: false,
+        category: "Accesories",
+        id: "57"
+    },
+    {
+        name: "Chenille Bath Rug",
+        filename: "product06.png",
+        price: 59.99,
+        discounted: true,
+        category: "Accesories",
+        id: "58"
+    },
+    {
+        name: "Chenille Bath Rug",
+        filename: "product06.png",
+        price: 59.99,
+        discounted: false,
+        category: "Accesories",
+        id: "59"
+    },
+    {
+        name: "Chenille Bath Rug",
+        filename: "product06.png",
+        price: 59.99,
+        discounted: false,
+        category: "Accesories",
+        id: "60"
+    },
+
+    {
+        name: "Blue Bath Rug",
+        filename: "product05.png",
+        price: 59.99,
+        discounted: false,
+        category: "Accesories",
+        id: "61"
+    },
+    {
+        name: "Blue Bath Rug",
+        filename: "product05.png",
+        price: 59.99,
+        discounted: false,
+        category: "Accesories",
+        id: "62"
+    }
+]
