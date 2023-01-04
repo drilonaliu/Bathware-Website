@@ -160,21 +160,25 @@ a{
     color: orange;
 }
 .brand img{
-    width: 42px;
-    height: 42px;
+    height: auto;
+    max-width: 100%;
 }
 .navbar-icons li img{
     padding: 7px 8px;
+    max-width: 100%;
+    height: auto;
 }
 .image-slider{
     background-color: #F5F5EF;
     text-align: center;
     padding: 7% 20% 15% 20%;
-    margin: 0 auto;
+    display: flex;
 }
 #test{
     float:left;
     padding-right:25px;
+    max-width: 100%;
+    height: auto;
 }
 .image-slider-text{
     background-color: #F5F5EF;
@@ -206,11 +210,8 @@ a{
     background-color: rgba(0, 0, 0, 0.65);
 }
 .categories{
-    max-width: 75%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: 0 21%;
 }
 .categories ul{
     list-style-type: none;
@@ -228,6 +229,54 @@ a{
 .categories li:hover p{
     color: orange;
 }
-.categories svg{
-    fill: #ffae00 !important;
+#testy{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+#test2{
+    padding-right:25px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    display: none;
+}
+#test3{
+    padding-right:25px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    display: none;
+}
+    #test4{
+        padding-right:25px;
+        max-width: 100%;
+        height: auto;
+        width: auto;
+        display: none;
+    } 
+#test1{
+    border: none;
+    outline: none;
+    background-color: #F5F5EF;
+}
+.carousel {
+    margin: 2em auto;
+    width: fit-content;
+}
+
+.dot {
+    display: inline-block;
+    width: .7em;
+    height: .7em;
+    border-radius: 0.35em;
+    background-color: #5d5d5d;
+    opacity: 0.25;
+    margin: 3px;
+}
+
+.dot:hover,
+.dot:focus {
+    opacity: 1;
+    background-color: #8f8f8f;
 }
