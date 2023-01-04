@@ -41,5 +41,4 @@ function createBlogPopUp(blog) {
     </div>
     `
     allBlogPopUps.appendChild(div);
-ok
 }
