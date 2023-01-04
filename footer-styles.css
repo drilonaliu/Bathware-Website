@@ -1,5 +1,4 @@
-/*-----------BLOGS----------------------*/
-
+/*========BLOGS====================================================================================================================================*/
 
 .blog-sec * {
     margin: 0;
@@ -7,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Roboto';
 }
-
 
 .title {
     margin: 5em auto 3em auto;
@@ -35,7 +33,6 @@
 }
 
 .blog-sec {
-    /* padding: 5em 12em 3em 12em; */
     width: fit-content;
     margin: 0 auto;
 }
@@ -103,7 +100,11 @@
 }
 
 
-.carousel {
+/*-------- BlogSlider------------------------------------------------*/
+
+
+/*three dots nav*/
+.blog-sec {
     margin: 2em auto;
     width: fit-content;
 }
@@ -116,6 +117,7 @@
     background-color: #5d5d5d;
     opacity: 0.25;
     margin: 3px;
+    transition: all .3s;
 }
 
 .dot:hover,
@@ -124,7 +126,46 @@
     background-color: #8f8f8f;
 }
 
-/*blog popup*/
+.slides input {
+    display: none;
+}
+
+
+.slider {
+    width: 1200px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+}
+
+.slide {
+    display: inline-block;
+    width: 20%;
+    transition: 2s;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+/*----------Blog PopUp------------------------------------------*/
 
 .popup button {
     background: transparent;
@@ -204,8 +245,9 @@
     transition: all .5s;
     transform: translate(-50%, -50%) scale(1);
 }
+/*===========================================================================================================================================*/
 
-/*-------------------------------------CARDS------------------------------------------------------------*/
+/*--------------------------------------CARDS----------------------------------------------------------------*/
 .cardsec * {
     margin: 0;
     padding: 0;
