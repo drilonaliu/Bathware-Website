@@ -161,7 +161,7 @@ function loadFromCategory(category) {
                     </div>
                 </a>
             </div>
-            <p class="product-description"><a href="product-details.html?id=${product.id}">${product.name}</a></p>
+            <p class="product-description"><a href="../../product/?id=${product.id}">${product.name}</a></p>
         `;
             if (product.discounted) {
                 let discountedPrice = calculateDiscount(product);
