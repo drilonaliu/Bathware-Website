@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< Updated upstream
     <title>BATHWARE</title>
+=======
+    <title>Document</title>
+>>>>>>> Stashed changes
     <link rel="stylesheet" href="css/main-styles.css">
     <link rel="stylesheet" href="css/featured-products-styles.css">
     <link rel="stylesheet" href="css/interesting-products.css">
     <link rel="stylesheet" href="css/footer-styles.css">
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 
@@ -21,10 +28,10 @@
             <div class="navbar-links">
                 <ul>
                     <li><a href="#">HOME</a></li>
-                    <li><a href="/categories/">SHOP</a></li>
-                    <li><a href="/about-us/">ABOUT US</a></li>
-                    <li><a href="/blog/">BLOG</a></li>
-                    <li><a href="/contact/">CONTACT US</a></li>
+                    <li><a href="categories/index.html">SHOP</a></li>
+                    <li><a href="about-us/index.html">ABOUT US</a></li>
+                    <li><a href="blog/index.html">BLOG</a></li>
+                    <li><a href="contact/index.html">CONTACT US</a></li>
                 </ul>
             </div>
             </div>
@@ -188,8 +195,7 @@
                 <input type="radio" name="carousel-btn" id="radio2">
                 <input type="radio" name="carousel-btn" id="radio3">
 
-
-                <div class="slide first">
+                <div class="slide first" id="slide1">
                     <div class="blog">
                         <img class="pic" src="images/blog1.png">
                         <div class="bcontent">
@@ -197,7 +203,7 @@
                                 <img src="images/calendar-icon.png" /> 10 January, 2019
                             </div>
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. asdfasdf amet</p>
-                            <button><a href="/blog/"> Read more </a></button>
+                            <button onclick="popupToggle(1)"> Read more </button>
                         </div>
                     </div>
 
@@ -208,7 +214,7 @@
                                 <img src="images/calendar-icon.png" /> 10 January, 2019
                             </div>
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. asdfasdf amet</p>
-                            <button><a href="/blog/"> Read more </a></button>
+                            <button onclick="popupToggle(2)"> Read more </button>
                         </div>
                     </div>
 
@@ -219,14 +225,14 @@
                                 <img src="images/calendar-icon.png" /> 10 January, 2019
                             </div>
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. asdfasdf amet</p>
-                            <button><a href="/blog/"> Read more </a></button>
+                            <button onclick="popupToggle(3)"> Read more </button>
                         </div>
                     </div>
                 </div>
 
 
                 <!--slide----------------------------->
-                <div class="slide">
+                <div class="slide" id="slide2">
                     <div class="blog">
                         <img class="pic" src="images/blog2.png">
                         <div class="bcontent">
@@ -234,7 +240,7 @@
                                 <img src="images/calendar-icon.png" /> 10 January, 2019
                             </div>
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. asdfasdf amet</p>
-                            <button><a href="/blog/"> Read more </a></button>
+                            <button onclick="popupToggle(1)"> Read more </button>
                         </div>
                     </div>
 
@@ -245,7 +251,7 @@
                                 <img src="images/calendar-icon.png" /> 10 January, 2019
                             </div>
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. asdfasdf amet</p>
-                            <button><a href="/blog/"> Read more </a></button>
+                            <button onclick="popupToggle(2)"> Read more </button>
                         </div>
                     </div>
 
@@ -256,13 +262,13 @@
                                 <img src="images/calendar-icon.png" /> 10 January, 2019
                             </div>
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. asdfasdf amet</p>
-                            <button><a href="/blog/"> Read more </a></button>
+                            <button onclick="popupToggle(3)"> Read more </button>
                         </div>
                     </div>
                 </div>
 
                 <!--slide-------------------------------------------------------->
-                <div class="slide">
+                <div class="slide" id="slide3">
                     <div class="blog">
                         <img class="pic" src="images/blog1.png">
                         <div class="bcontent">
@@ -270,7 +276,7 @@
                                 <img src="images/calendar-icon.png" /> 10 January, 2019
                             </div>
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. asdfasdf amet</p>
-                            <button><a href="/blog/"> Read more </a></button>
+                            <button onclick="popupToggle(1)"> Read more </button>
                         </div>
                     </div>
 
@@ -281,7 +287,7 @@
                                 <img src="images/calendar-icon.png" /> 10 January, 2019
                             </div>
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. asdfasdf amet</p>
-                            <button><a href="/blog/"> Read more </a></button>
+                            <button onclick="popupToggle(2)"> Read more </button>
                         </div>
                     </div>
 
@@ -292,8 +298,135 @@
                                 <img src="images/calendar-icon.png" /> 10 January, 2019
                             </div>
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. asdfasdf amet</p>
-                            <button><a href="/blog/"> Read more </a></button>
+                            <button onclick="popupToggle(3)"> Read more </button>
                         </div>
+                    </div>
+                </div>
+
+
+                <div class="popup" id="1">
+                    <div class="overlay"></div>
+                    <div class="popup-content">
+                        <button onclick="popupToggle(1)"> <img src="images/close.png" width="20px"> </button>
+                        <img class="pic" src="images/blog1.png">
+                        <div class="date">
+                            <img src="images/calendar-icon.png" /> 10 January, 2019
+                        </div>
+                        <h1> Lorem Ipsum Lorem Ipsum Lorem Ipsum</h1>
+                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit repellendus perspiciatis molestias
+                            totam. Velit tenetur ex sunt optio accusantium recusandae voluptatum totam id, voluptatem quisquam
+                            at consequuntur maiores architecto quis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illo nihil dicta vero labore nesciunt. Quae iure obcaecati maiores velit harum, in quaerat sapiente
+                            reiciendis a officiis, fugit ipsum maxime minima.Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sit repellendus perspiciatis molestias
+                            totam. Velit tenetur ex sunt optio accusantium recusandae voluptatum totam id, voluptatem quisquam
+                            at consequuntur maiores architecto quis? <br><br>
+                     
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illo nihil dicta vero labore nesciunt. Quae iure obcaecati maiores velit harum, in quaerat sapiente
+                            reiciendis a officiis, fugit ipsum maxime minima.Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sit repellendus perspiciatis molestias
+                            totam. Velit tenetur ex sunt optio accusantium recusandae voluptatum totam id, voluptatem quisquam
+                            at consequuntur maiores architecto quis? <br><br>
+                     
+                     
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illo nihil dicta vero labore nesciunt. Quae iure obcaecati maiores velit harum, in quaerat sapiente
+                            reiciendis a officiis, fugit ipsum maxime minima.Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sit repellendus perspiciatis molestias
+                            totam. Velit tenetur ex sunt optio accusantium recusandae voluptatum totam id, voluptatem quisquam
+                            at consequuntur maiores architecto quis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illo nihil dicta vero labore nesciunt. Quae iure obcaecati maiores velit harum, in quaerat sapiente
+                            reiciendis a officiis, fugit ipsum maxime minima.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit repellendus perspiciatis molestias
+                            totam. Velit tenetur ex sunt optio accusantium recusandae voluptatum totam id, voluptatem quisquam
+                            at consequuntur maiores architecto quis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illo nihil dicta vero labore nesciunt. Quae iure obcaecati maiores velit harum, in quaerat sapiente
+                            reiciendis a officiis, fugit ipsum maxime minima.</p>
+                    </div>
+                </div>
+
+                <div class="popup" id="2">
+                    <div class="overlay"></div>
+                    <div class="popup-content">
+                        <button onclick="popupToggle(2)"> <img src="images/close.png" width="20px"> </button>
+                        <img class="pic" src="images/blog2.png">
+                        <div class="date">
+                            <img src="images/calendar-icon.png" /> 10 January, 2019
+                        </div>
+                        <h1> Lorem Ipsum Lorem Ipsum Lorem Ipsum</h1>
+                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit repellendus perspiciatis molestias
+                            totam. Velit tenetur ex sunt optio accusantium recusandae voluptatum totam id, voluptatem quisquam
+                            at consequuntur maiores architecto quis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illo nihil dicta vero labore nesciunt. Quae iure obcaecati maiores velit harum, in quaerat sapiente
+                            reiciendis a officiis, fugit ipsum maxime minima.Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sit repellendus perspiciatis molestias
+                            totam. Velit tenetur ex sunt optio accusantium recusandae voluptatum totam id, voluptatem quisquam
+                            at consequuntur maiores architecto quis? <br><br>
+                     
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illo nihil dicta vero labore nesciunt. Quae iure obcaecati maiores velit harum, in quaerat sapiente
+                            reiciendis a officiis, fugit ipsum maxime minima.Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sit repellendus perspiciatis molestias
+                            totam. Velit tenetur ex sunt optio accusantium recusandae voluptatum totam id, voluptatem quisquam
+                            at consequuntur maiores architecto quis? <br><br>
+                     
+                     
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illo nihil dicta vero labore nesciunt. Quae iure obcaecati maiores velit harum, in quaerat sapiente
+                            reiciendis a officiis, fugit ipsum maxime minima.Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sit repellendus perspiciatis molestias
+                            totam. Velit tenetur ex sunt optio accusantium recusandae voluptatum totam id, voluptatem quisquam
+                            at consequuntur maiores architecto quis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illo nihil dicta vero labore nesciunt. Quae iure obcaecati maiores velit harum, in quaerat sapiente
+                            reiciendis a officiis, fugit ipsum maxime minima.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit repellendus perspiciatis molestias
+                            totam. Velit tenetur ex sunt optio accusantium recusandae voluptatum totam id, voluptatem quisquam
+                            at consequuntur maiores architecto quis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illo nihil dicta vero labore nesciunt. Quae iure obcaecati maiores velit harum, in quaerat sapiente
+                            reiciendis a officiis, fugit ipsum maxime minima.</p>
+                    </div>
+                </div>
+
+                <div class="popup" id="3">
+                    <div class="overlay"></div>
+                    <div class="popup-content">
+                        <button onclick="popupToggle(3)"> <img src="images/close.png" width="20px"> </button>
+                        <img class="pic" src="images/blog3.png">
+                        <div class="date">
+                            <img src="images/calendar-icon.png" /> 10 January, 2019
+                        </div>
+                        <h1> Lorem Ipsum Lorem Ipsum Lorem Ipsum</h1>
+                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit repellendus perspiciatis molestias
+                            totam. Velit tenetur ex sunt optio accusantium recusandae voluptatum totam id, voluptatem quisquam
+                            at consequuntur maiores architecto quis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illo nihil dicta vero labore nesciunt. Quae iure obcaecati maiores velit harum, in quaerat sapiente
+                            reiciendis a officiis, fugit ipsum maxime minima.Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sit repellendus perspiciatis molestias
+                            totam. Velit tenetur ex sunt optio accusantium recusandae voluptatum totam id, voluptatem quisquam
+                            at consequuntur maiores architecto quis? <br><br>
+                     
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illo nihil dicta vero labore nesciunt. Quae iure obcaecati maiores velit harum, in quaerat sapiente
+                            reiciendis a officiis, fugit ipsum maxime minima.Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sit repellendus perspiciatis molestias
+                            totam. Velit tenetur ex sunt optio accusantium recusandae voluptatum totam id, voluptatem quisquam
+                            at consequuntur maiores architecto quis? <br><br>
+                     
+                     
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illo nihil dicta vero labore nesciunt. Quae iure obcaecati maiores velit harum, in quaerat sapiente
+                            reiciendis a officiis, fugit ipsum maxime minima.Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Sit repellendus perspiciatis molestias
+                            totam. Velit tenetur ex sunt optio accusantium recusandae voluptatum totam id, voluptatem quisquam
+                            at consequuntur maiores architecto quis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illo nihil dicta vero labore nesciunt. Quae iure obcaecati maiores velit harum, in quaerat sapiente
+                            reiciendis a officiis, fugit ipsum maxime minima.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit repellendus perspiciatis molestias
+                            totam. Velit tenetur ex sunt optio accusantium recusandae voluptatum totam id, voluptatem quisquam
+                            at consequuntur maiores architecto quis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illo nihil dicta vero labore nesciunt. Quae iure obcaecati maiores velit harum, in quaerat sapiente
+                            reiciendis a officiis, fugit ipsum maxime minima.</p>
                     </div>
                 </div>
             </div>
@@ -391,25 +524,25 @@
                 <div class="foot-col">
                     <h4> SUPPORT</h4>
                     <ul>
-                        <li> <a href="/contact/"> Contact us</a></li>
-                        <li> <a href="/contact/"> FAQ </a></li>
-                        <li> <a href="/contact/"> Delivery </a></li>
-                        <li> <a href="/contact/"> Payment Options </a></li>
-                        <li> <a href="/contact/"> Returns & Refunds </a></li>
-                        <li> <a href="/contact/"> Warranty </a></li>
+                        <li> <a href="contact/index.html"> Contact us</a></li>
+                        <li> <a href="contact/index.html"> FAQ </a></li>
+                        <li> <a href="contact/index.html"> Delivery </a></li>
+                        <li> <a href="contact/index.html"> Payment Options </a></li>
+                        <li> <a href="contact/index.html"> Returns & Refunds </a></li>
+                        <li> <a href="contact/index.html"> Warranty </a></li>
                     </ul>
                 </div>
 
                 <div class="foot-col">
                     <h4> SHOP</h4>
                     <ul>
-                        <li> <a href="/categories/accessories/">Showers </a></li>
-                        <li> <a href="/categories/bathtubs/">Bath</a></li>
-                        <li> <a href="/categories/accessories/">Vanities </a></li>
-                        <li> <a href="/categories/toilets/"> Toilets</a></li>
-                        <li> <a href="/categories/basins/">Basins</a></li>
-                        <li> <a href="/categories/tapware/">Tapwares </a></li>
-                        <li> <a href="/categories/accessories/"> Accesories </a></li>
+                        <li> <a href="categories/accessories/index.html">Showers </a></li>
+                        <li> <a href="categories/bathtubs/index.html">Bath</a></li>
+                        <li> <a href="categories/accessories/index.html">Vanities </a></li>
+                        <li> <a href="categories/toilets/index.html"> Toilets</a></li>
+                        <li> <a href="categories/basins/index.html">Basins</a></li>
+                        <li> <a href="categories/tapware/index.html">Tapwares </a></li>
+                        <li> <a href="categories/accessories/index.html"> Accesories </a></li>
                     </ul>
                 </div>
 
@@ -417,19 +550,19 @@
                     <h4> INFORMATION</h4>
                     <ul>
                         <li> <a href="#">Home </a></li>
-                        <li> <a href="/about-us/"> About us</a></li>
-                        <li> <a href="/blog/"> Blogs </a></li>
-                        <li> <a href="/contact/"> Contact Us </a></li>
+                        <li> <a href="about-us/index.html"> About us</a></li>
+                        <li> <a href="blog/index.html"> Blogs </a></li>
+                        <li> <a href="contact/index.html"> Contact Us </a></li>
                     </ul>
                 </div>
 
                 <div class="foot-col">
                     <h4> MY ACCOUNT</h4>
                     <ul>
-                        <li> <a href="/user"> Your Account </a></li>
-                        <li> <a href="/cart/"> Check Out</a></li>
-                        <li> <a href="/user log in/">Login </a></li>
-                        <li> <a href="/user log in/">Register </a></li>
+                        <li> <a href="user/index.html"> Your Account </a></li>
+                        <li> <a href="cart/index.html"> Check Out</a></li>
+                        <li> <a href="user log in/index.html">Login </a></li>
+                        <li> <a href="user log in/index.html">Register </a></li>
                     </ul>
                 </div>
             </div>
@@ -459,12 +592,19 @@
             </div>
         </div>
     </footer>
+<<<<<<< Updated upstream
     <!-- 
         
         <script src="js/cart-data.js" type="text/JavaScript"></script>
         <script src="js/cart-functions.js" type="text/JavaScript"></script>
         <script src="js/cart-script.js" type="text/JavaScript"></script> -->
 
+=======
+
+    <script src="js/blog-scripts/blogs-data.js" type="text/JavaScript"> </script>
+    <script src="js/blog-scripts/blogs-functions.js" type="text/JavaScript"> </script>
+    <script src="js/blog-scripts/blogs-script.js" type="text/JavaScript"> </script>
+>>>>>>> Stashed changes
 </body>
 <script>
     var currentTime = new Date().getHours();
