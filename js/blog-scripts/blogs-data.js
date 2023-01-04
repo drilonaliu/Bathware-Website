@@ -82,7 +82,7 @@ const blogsData = [
     },
     {
         articleId: 3,
-        articleName: "How to brush teeth? Here are five steps ..",
+        articleName: "How to brush teeth? Here are five steps..",
         articleImage: "blog3.png",
         articleDate: "13 January, 2019",
         articleHeader: "How to take a bath",
