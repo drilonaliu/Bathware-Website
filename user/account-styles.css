@@ -1,0 +1,100 @@
+.account-details h1 {
+    width: fit-content;
+    color: #303030;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -0.9px;
+}
+
+.account-details .title {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.account-details .tline {
+    background-color: #303030;
+    border-bottom: 3px solid #303030;
+    opacity: 0.8;
+    margin: auto;
+}
+
+.email-password {
+    /* border: 1px solid black; */
+    width: 70%;
+    margin: 5em auto;
+    min-height: 300px;
+    background: var(--color-background);
+}
+
+.account-details h3 {
+    padding: 1em 0 0;
+    color: #303030;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.email-password p {
+    padding-top: 2em;
+    padding-left: 5em;
+}
+
+.change-pass {
+    padding: 1em 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    display: none;
+}
+
+.change-pass button {
+    margin-top: 2em;
+}
+
+.account-details input {
+    margin: 8px 0;
+    width: 30%;
+    height: 30px;
+    border: none;
+}
+
+.change-pass p {
+    padding-left: 0;
+    padding-bottom: 2em;
+}
+
+.edit button {
+    margin: 2em 7em;
+}
+
+.address {
+    /* border: 1px solid black; */
+    width: 70%;
+    margin: 5em auto;
+    min-height: 400px;
+    background: var(--color-background);
+}
+
+.address p {
+    padding-top: 2em;
+    padding-left: 5em;
+}
+
+.row {
+    padding: 1em 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    /* display: none; */
+}
+
+.row button {
+    margin-top: 2em;
+    display: none;
+}
