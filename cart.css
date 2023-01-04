@@ -142,7 +142,7 @@ body {
 
 .cart-product-row {
     margin: .7em 0;
-    height: 100px;
+    max-height: 100px;
 }
 
 .cart-product {
