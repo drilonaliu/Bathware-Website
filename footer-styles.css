@@ -104,7 +104,7 @@
 
 
 /*three dots nav*/
-.blog-sec {
+.blog-sec nav {
     margin: 2em auto;
     width: fit-content;
 }
@@ -126,10 +126,11 @@
     background-color: #8f8f8f;
 }
 
+
+
 .slides input {
     display: none;
 }
-
 
 .slider {
     width: 1200px;
@@ -330,7 +331,7 @@
     color: #fac03d;
 }
 
-/*------------NEWS LETTER-----------------------*/
+/*===========================NEWS LETTER=====================================================*/
 .newsletter {
     margin: 0;
     padding: 0;
