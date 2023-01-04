@@ -82,6 +82,11 @@
     margin: .5em 0;
 }
 
+.blog a{
+    color:white;
+}
+
+
 .blog button {
     color: #f5f5ef;
     font-size: 14px;

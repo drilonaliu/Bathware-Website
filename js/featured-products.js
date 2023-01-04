@@ -20,21 +20,19 @@ function loadInitialItems() {
         if (counter < numOfItems) {
             out = `
                 <div class="image-wrapper">
-                    <a href="product-details.html?id=${product.id}">
-                        <img class="product-image" src="images/${product.filename}" alt="${product.name} Picture">
-                        <div class="image-overlay">
-                            <button onclick="addToCart(${product.id})"><a>ADD TO CART <img src="images/cart-icon.png" alt="cart-icon"></a></button>
-                            <nav>
-                                <ul class="product-navbar">
-                                    <li><a href="#"><img src="images/heart-icon.png" alt="heart"></a></li>
-                                    <li><a href="#"><img src="images/eye-icon.png" alt="eye"></a></li>
-                                    <li><a href="#"><img src="images/arrow-icon.png" alt="arrow"></a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </a>
+                    <img class="product-image" src="images/${product.filename}" alt="${product.name} Picture">
+                    <div class="image-overlay">
+                        <button onclick="addToCart(${product.id})"><a>ADD TO CART <img src="images/cart-icon.png" alt="cart-icon"></a></button>
+                        <nav>
+                            <ul class="product-navbar">
+                                <li><a href="#"><img src="images/heart-icon.png" alt="heart"></a></li>
+                                <li><a href="#"><img src="images/eye-icon.png" alt="eye"></a></li>
+                                <li><a href="#"><img src="images/arrow-icon.png" alt="arrow"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <p class="product-description"><a href="product-details.html?id=${product.id}">${product.name}</a></p>
+                <p class="product-description"><a href="/product/?id=${product.id}">${product.name}</a></p>
             `;
             if (product.discounted) {
                 let discountedPrice = calculateDiscount(product);
@@ -75,7 +73,6 @@ function loadMore() {
         if (counter >= currentDisplayedProducts && counter < loadItems + currentDisplayedProducts) {
             out = `
                 <div class="image-wrapper">
-                <a href="product-details.html?id=${product.id}">
                     <img class="product-image" src="images/${product.filename}" alt="${product.name} Picture">
                     <div class="image-overlay">
                         <button onclick="addToCart(${product.id})"><a>ADD TO CART <img src="images/cart-icon.png" alt="cart-icon"></a></button>
@@ -87,9 +84,8 @@ function loadMore() {
                             </ul>
                         </nav>
                     </div>
-                </a>
-            </div>
-            <p class="product-description"><a href="product-details.html?id=${product.id}">${product.name}</a></p>
+                </div>
+            <p class="product-description"><a href="/product/?id=${product.id}">${product.name}</a></p>
             `;
             if (product.discounted) {
                 let discountedPrice = calculateDiscount(product);
