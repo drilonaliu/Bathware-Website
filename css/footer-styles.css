@@ -269,7 +269,6 @@
 
 
 .cardsec {
-    border: 2px solid green;
     padding: 8em 12em;
 }
 
@@ -350,7 +349,7 @@
     color: white;
     font-family: 'Roboto';
     background-color: #000000;
-    background-image: url("images/modern-minimalist-bathroom.png");
+    background-image: url("../images/modern-minimalist-bathroom.png");
     padding: 8em 12em;
 }
 

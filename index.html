@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BATHWARE</title>
-    <link rel="stylesheet" href="../css/main-styles.css">
-    <link rel="stylesheet" href="../css/featured-products-styles.css">
-    <link rel="stylesheet" href="../css/interesting-products.css">
-    <link rel="stylesheet" href="../css/footer-styles.css">
-        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main-styles.css">
+    <link rel="stylesheet" href="css/featured-products-styles.css">
+    <link rel="stylesheet" href="css/interesting-products.css">
+    <link rel="stylesheet" href="css/footer-styles.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -50,8 +51,8 @@
     <main class="products">
         <section class="categories">
             <ul>
-                <li><a href="/categories/tapware/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="107" height="117" viewBox="0 0 107 117">
+                <li><a href="/categories/tapware/"><svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="107" height="117" viewBox="0 0 107 117">
                             <g>
                                 <g>
                                     <image width="107" height="117"
@@ -70,8 +71,8 @@
                             </g>
                         </g>
                     </svg></li>
-                <li><a href="/categories/basins/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="105" height="101" viewBox="0 0 105 101">
+                <li><a href="/categories/basins/"><svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="101" viewBox="0 0 105 101">
                             <g>
                                 <g>
                                     <image width="105" height="101"
@@ -89,8 +90,8 @@
                             </g>
                         </g>
                     </svg></li>
-                <li><a href="/categories/toilets/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="101" height="117" viewBox="0 0 101 117">
+                <li><a href="/categories/toilets/"><svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="117" viewBox="0 0 101 117">
                             <g>
                                 <g>
                                     <image width="101" height="117"
@@ -108,8 +109,8 @@
                             </g>
                         </g>
                     </svg></li>
-                <li><a href="/categories/accessories/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            width="117" height="103" viewBox="0 0 117 103">
+                <li><a href="/categories/accessories/"><svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="117" height="103" viewBox="0 0 117 103">
                             <g>
                                 <g>
                                     <image width="117" height="103"
@@ -133,7 +134,7 @@
             <div class="product-cards">
             </div>
             <div class="load-more-button">
-                <button onclick="loadMore()" class="load-more" style="cursor:pointer">LOAD MORE</button>
+                <button id="button1" onclick="loadMore()" class="load-more" style="cursor:pointer">LOAD MORE</button>
             </div>
             <script src="js/featured-products.js" type="text/JavaScript"></script>
             <script>
@@ -458,12 +459,96 @@
             </div>
         </div>
     </footer>
-<!-- 
-    
-    <script src="js/cart-data.js" type="text/JavaScript"></script>
-    <script src="js/cart-functions.js" type="text/JavaScript"></script>
-    <script src="js/cart-script.js" type="text/JavaScript"></script> -->
-   
+    <!-- 
+        
+        <script src="js/cart-data.js" type="text/JavaScript"></script>
+        <script src="js/cart-functions.js" type="text/JavaScript"></script>
+        <script src="js/cart-script.js" type="text/JavaScript"></script> -->
+
 </body>
+<script>
+    var currentTime = new Date().getHours();
+    if (document.body) {
+        if (true) {
+            // let arr1 = document.getElementsByClassName(".load-more");
+            document.documentElement.style.setProperty('--color-background', '#94785d');
+            document.documentElement.style.setProperty('--color-card-background', '#4a4a4e');
+            let button1 = document.getElementById("button1");
+            button1.style.color = "#303030";
+            button1.style.backgroundColor = "#f5f5ef";
+
+            let productPrice = document.querySelectorAll(".product p");
+            productPrice.forEach(element => {
+                element.style.color = "#f5f5ef";
+            });
+
+            let productDesc = document.querySelectorAll(".product-description a");
+            productDesc.forEach(element => {
+                element.style.color = "#f5f5ef";
+            })
+
+            let h2text = document.querySelectorAll(".title h2");
+            h2text.forEach(element => {
+                element.style.color = "#f5f5ef";
+            });
+
+            let h4text = document.querySelectorAll(".title h4");
+            h4text.forEach(element => {
+                element.style.color = "#f5f5ef";
+            });
+
+            let categories = document.querySelectorAll(".categories p");
+            categories.forEach(element => {
+                element.style.color = "#f5f5ef";
+            });
+
+            let blogP = document.querySelectorAll(".blog p");
+            blogP.forEach(element => {
+                element.style.color = "#f5f5ef";
+            });
+
+            let blogButton = document.querySelectorAll(".blog button");
+            blogButton.forEach(element => {
+                element.style.backgroundColor = "#f5f5ef";
+            });
+
+            let blogA = document.querySelectorAll(".blog a");
+            blogA.forEach(element => {
+                element.style.color = "#303030";
+            });
+
+            let imageSliderh1 = document.querySelectorAll(".image-slider-text h1");
+            imageSliderh1.forEach(element => {
+                element.style.color = "#f5f5ef";
+            });
+
+            let imageSliderh4 = document.querySelectorAll(".image-slider-text h4");
+            imageSliderh4.forEach(element => {
+                element.style.color = "#f5f5ef";
+            });
+
+            let imageSliderP = document.querySelectorAll(".image-slider-text p");
+            imageSliderP.forEach(element => {
+                element.style.color = "#f5f5ef";
+            });
+
+            // Array.from(arr1).forEach(element => {
+            // console.log("hi");
+            // });
+
+            // Array.from(document.getElementsByClassName(".load-more-button button")).forEach(element => {
+            //     console.log("hi");
+            //     element.style.color = "#303030";
+            //     element.style.backgroundColor = "#f5f5ef";
+            // });
+            // document.getElementsByClassName(".products button").style.color = "#303030";
+            // document.getElementsByClassName(".products button").style.backgroundColor = "#f5f5ef";
+            document.body.style.background = "#303030";
+        }
+        else {
+            document.body.style.background = "#fff";
+        }
+    }
+</script>
 
 </html>
