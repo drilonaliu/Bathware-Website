@@ -7,15 +7,15 @@ fetch("js/products.json")
 let container = document.querySelector(".product-cards");
 let loadMoreButton = document.querySelector(".load-more-button button");
 
-let initialItems = Math.floor(container.offsetWidth / 253) * 2;
-let loadItems = initialItems;
+let numOfItems = Math.floor(container.offsetWidth / 253) * 2;
+let loadItems = numOfItems;
 
 function loadInitialItems() {
     let products = JSON.parse(localStorage.getItem("products"));
     let out = "";
     let counter = 0;
     for (let product of products) {
-        if (counter < initialItems) {
+        if (counter < numOfItems) {
             out = `
                 <div class="image-wrapper">
                     <a href="product-details.html?id=${product.id}">

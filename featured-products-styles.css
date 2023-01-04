@@ -1,9 +1,3 @@
-:root {
-    --color-primary: #ffae00;
-    --color-text: #303030;
-    --color-card-background: #f5f6f8;
-}
-
 .products h2,
 .products h3,
 .products p {
@@ -22,7 +16,18 @@
     letter-spacing: -0.9px;
 }
 
+.featured-products .title {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.featured-products .tline {
+    background-color: #303030;
+    border-bottom: 3px solid #303030;
+    opacity: 0.8;
+    margin: auto;
+}
 
 .product-navbar {
     list-style: none;

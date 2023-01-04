@@ -5,15 +5,27 @@ fetch("../../js/products.json")
     });
 
 let container = document.querySelector(".product-cards");
-initialItems = Math.floor(container.offsetWidth / 253);
+const initialItems = Math.floor(container.offsetWidth / 253);
+let numOfItems = initialItems;
+let pageNumber = 0;
+
+let totalProducts = 0;
+let category;
 
 const rangeInput = document.querySelectorAll(".range-input input");
 priceInput = document.querySelectorAll(".price-input input");
 progress = document.querySelector(".slider .progress");
 
-let info = document.querySelector(".product-cards .info");
+let displayOptions = document.querySelectorAll(".option div");
+
+let info = document.createElement("p");
 
 let priceGap = 100;
+
+let dropdown = document.querySelector(".dropdown");
+dropdown.onclick = function () {
+    dropdown.classList.toggle("active");
+}
 
 rangeInput.forEach(input => {
     input.addEventListener("input", e => {
@@ -58,40 +70,81 @@ priceInput.forEach(input => {
     });
 });
 
+
+function displaySizes() {
+    displayOptions[0].innerHTML = numOfItems;
+    displayOptions[1].innerHTML = numOfItems * 2;
+}
+
+function logClick(n) {
+    if (n == 1) {
+        document.querySelector(".textBox").value = initialItems;
+        numOfItems = initialItems;
+        pageNumber = 0;
+        loadFromCategory(this.category);
+    }
+    if (n == 2) {
+        document.querySelector(".textBox").value = initialItems * 2;
+        numOfItems = initialItems * 2;
+        pageNumber = 0;
+        loadFromCategory(this.category);
+    }
+}
+
+function addInfoText() {
+    info.className = 'info';
+    info.innerHTML = 'No products match that price range!';
+    container.append(info);
+}
+
 function priceCategory(minVal, maxVal) {
     let products = document.querySelectorAll(".product-cards .product");
     info.style.display = "none";
-    let counter=0;
+    container.style.justifyContent = "left";
+    let counter = 0;
     products.forEach(function (product) {
         price = parseInt(product.getElementsByClassName("price")[0].firstChild.data.substring(1));
         console.log(price);
         if (price < minVal || price > maxVal) {
             product.style.display = "none";
-            console.log("removed");
         }
         else {
             product.style.display = "block";
-            console.log("added");
         }
         if (product.style.display === "none")
             counter++;
     });
-    if(counter==products.length){
-        let p = document.createElement("p");
-        // p.className = 'info';
-        // container.append(p);
-        // p.innerHTML = info;
-
+    if (counter == products.length) {
         info.style.display = "flex";
+        container.style.justifyContent = "center";
     }
 }
 
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
+
+function numOfProducts(category) {
+    let products = JSON.parse(localStorage.getItem("products"));
+    for (let product of products) {
+        if (product.category === category) {
+            totalProducts++;
+        }
+    }
+    document.getElementsByName("Dropdown")[0].placeholder = numOfItems;
+}
+
 function loadFromCategory(category) {
+    this.category = category;
+    removeAllChildNodes(container);
+    addInfoText();
     let products = JSON.parse(localStorage.getItem("products"));
     let out = "";
     let counter = 0;
     for (let product of products) {
-        if (counter < initialItems && product.category === category) {
+        if (counter < numOfItems * (pageNumber + 1) && product.category === category) {
             out = `
             <div class="image-wrapper">
                 <a href="product-details.html?id=${product.id}">
@@ -121,14 +174,81 @@ function loadFromCategory(category) {
             <p class="price">&dollar;${product.price}</p>
             `;
             }
-            let div = document.createElement("div");
-            div.className = 'product';
-            container.append(div);
-            div.innerHTML = out;
+            if (counter >= numOfItems * pageNumber) {
+                let div = document.createElement("div");
+                div.className = 'product';
+                container.append(div);
+                div.innerHTML = out;
+                div.style.opacity = 0;
+                fadeIn(div);
+            }
             counter++;
         }
 
     }
+}
+
+function loadMore(bool) {
+    if (bool) {
+        if (pageNumber + 1 < Math.ceil(totalProducts / numOfItems)) {
+            pageNumber += 1;
+            fadeOutProductCards();
+            loadFromCategory(this.category);
+        }
+        if(pageNumber +1 >= Math.ceil(totalProducts / numOfItems)) {
+            document.querySelectorAll(".previous-next li")[1].style.color = "gray";
+        }
+        else{
+            document.querySelectorAll(".previous-next li")[0].style.color = "black";
+            document.querySelectorAll(".previous-next li")[1].style.color = "black";
+        }
+    }
+    else {
+        if (pageNumber - 1 >= 0) {
+            pageNumber -= 1;
+            fadeOutProductCards();
+            loadFromCategory(this.category);
+        }
+        if(pageNumber - 1 < 0) {
+            document.querySelectorAll(".previous-next li")[0].style.color = "gray";
+        }
+        else{
+            document.querySelectorAll(".previous-next li")[1].style.color = "black";
+            document.querySelectorAll(".previous-next li")[0].style.color = "black";
+        }
+    }
+
+}
+
+function fadeOutProductCards() {
+    let products = document.querySelectorAll(".product-cards .product");
+    for (let product of products) {
+        fadeOut(product);
+    }
+}
+
+function fadeIn(div) {
+    let opacity = 0;
+    let interval = setInterval(function () {
+        if (opacity <= 1) {
+            opacity = opacity + 0.1;
+            div.style.opacity = opacity;
+        } else {
+            clearInterval(interval);
+        }
+    }, 30);
+}
+
+function fadeOut(div) {
+    let opacity = 1;
+    let interval = setInterval(function () {
+        if (opacity > 0) {
+            opacity = opacity - 0.1;
+            div.style.opacity = opacity;
+        } else {
+            clearInterval(interval);
+        }
+    }, 30);
 }
 
 function calculateDiscount(product) {
