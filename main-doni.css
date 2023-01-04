@@ -117,7 +117,7 @@ a{
 .image-slider{
     background-color: #F5F5EF;
     text-align: center;
-    padding: 7% 20% 15% 20%;
+    padding: 7% 15% 5% 15%;
     display: flex;
 }
 #test{
@@ -231,3 +231,50 @@ a{
     background-color: #8f8f8f;
 }
 
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    padding: 132px 21px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;}
+
+    .slider{
+        width: 800px;
+        height: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      
+      .slides{
+        width: 500%;
+        height: 500px;
+        display: flex;
+      }
+      
+      .slides input{
+        display: none;
+      }
+      
+      .slide{
+        width: 20%;
+        transition: 2s;
+      }
+      
+      .slide img{
+        max-width: 100%;
+        height: auto;
+      }
+      

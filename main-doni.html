@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="navbar.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <script src="navbar.js" defer></script>
+    <script src="carousel.js" defer></script>
     
 </head>
 <body>
@@ -42,18 +43,36 @@
 </nav>
 
 <div class="image-slider">
-    <button type="button" id="test1"><img src="images/slider left.png"></button>
-    <img src="images/bath-tub.png" id="test">
-    <img src="images/bath-tub.png" id="test2">
-    <img src="images/bath-tub.png" id="test3">
-    <img src="images/bath-tub.png" id="test4">
+    <label for="radio1" class="manual-btn"><img src="images/slider left.png"></label>
+    <div class="slider">
+        <div class="slides">
+     
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          
+          <div class="slide first">
+            <img src="images/bath-tub.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/bath-tub.png" alt="">
+          </div>
+
+        </div>
+        
+        <div class="navigation-manual">
+        </div>
+        
+      </div>
+      
+      
 <section class="image-slider-text">
     <h4>WELCOME TO OUR</h4>
     <h1>BATHWARE GALLERY</h1>
     <p>There are many different products in our store, here are some of the best sellers.</p>
     <a href="#" id="button">SHOP NOW</a></section>
-    <button type="button" id="test1" style="margin-left: 15px;"><img src="images/slider right.png"></button>
+    <label for="radio2" class="manual-btn"><img src="images/slider right.png"></label>
 </div>
+
 </header>
 <main class="products">
     <section class="categories">
