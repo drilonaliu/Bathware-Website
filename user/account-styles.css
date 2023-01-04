@@ -45,7 +45,6 @@
 
 .change-pass {
     padding: 1em 6em;
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
@@ -85,16 +84,23 @@
     padding-left: 5em;
 }
 
-.row {
+.address-details {
     padding: 1em 6em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
-    /* display: none; */
 }
 
-.row button {
+.address-details p {
+    padding-left: 0;
+}
+
+.address-details button {
     margin-top: 2em;
     display: none;
+}
+
+.error{
+    color:red;
 }

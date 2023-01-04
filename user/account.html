@@ -57,16 +57,17 @@
                 <input type="password" name="new-password">
                 <label for="confirm-new-password">Confirm New Password</label>
                 <input type="password" name="confirm-new-password">
-                <button>Confirm Changes</button>
+                <button onclick="confirmPassword();">Confirm Changes</button>
+                <p id="password-error" class="error"></p>
             </div>
-            <div class="edit">
-                <button>Edit Password</button>
+            <div id="edit-password" class="edit">
+                <button onclick="editPassword();">Edit Password</button>
             </div>
         </div>
         <div class="address">
             <h3>Address</h3>
             <p>Address Details:</p>
-            <div id="first-row" class="row">
+            <div class="address-details">
                     <label for="name">Name:</label>
                     <input type="text" name="name" placeholder="Name" readonly>
                     <label for="last-name">Last Name:</label>
@@ -78,13 +79,14 @@
                     <label for="country">Country:</label>
                     <input type="text" name="country" placeholder="Country" readonly>
                     <label for="phone">Phone Number:</label>
-                    <input type="tel" name="phone" placeholder="+38344123456" readonly>
-                    <button>Confirm Changes</button>
+                    <input type="tel" name="phone" placeholder="38344123456" readonly>
+                    <p id="address-error" class="error"></p>
             </div>
-            <div class="edit">
-                <button>Edit Address</button>
+            <div id="edit-address" class="edit">
+                <button onclick="addressEdit();">Edit Address</button>
             </div>
         </div>
+        <script src="account-script.js"></script>
     </section>
 
     <!---------Footer------------------------------------------------------------------------------------------------>
