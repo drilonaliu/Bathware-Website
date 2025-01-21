@@ -16,10 +16,12 @@ The design template is based on the "Bathware Free PSD Template for Bathware Sto
 The website features the following pages:
 
 * Main Page: Highlights the core features of the website.
-* About: Provides information about the project or purpose.
 * Products: Showcases the available products.
-* Sign In: Allows users to log in to their accounts.
 * Cart: Displays items added by the user for checkout.
+* Sign In: Allows users to log in to their accounts.
+* Blog: Features articles or posts related to the website's theme or products.
+* About Us: Provides information about the team or organization behind the website.
+* Contact: Includes contact details and a form for users to reach out with inquiries or feedback.
 
 
 <div>
@@ -30,8 +32,7 @@ The website features the following pages:
    <img src = "readMeImages/img5.png">
    <img src = "readMeImages/img6.png">
    <img src = "readMeImages/img7.png">
-  <img src = "readMeImages/img8.png">
-    <img src = "readMeImages/img10.png">
-    <img src = "readMeImages/img9.png">
-   
+   <img src = "readMeImages/img8.png">
+   <img src = "readMeImages/img10.png">
+  <img src = "readMeImages/img9.png"> 
 </div>
